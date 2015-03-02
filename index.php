@@ -8,5 +8,6 @@
 </head>
 <body>
 	<div>Hello</div>
+	<div></div>
 </body>
 </html>
