@@ -1,12 +1,13 @@
 body {
-	background: url("/img/cowboy.jpg") no-repeat;
-	position: absolute;
-	left: 0;
-	right: 0;
-	
+
+	background: url("../img/cowboybg.png") no-repeat top left;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+
 }
+
 div {
-/*	margin-bottom: 5000 px;
-	width: 100px;
-	background-color: red;*/
+	margin-bottom: 5px;
+	width: 150px;
+	background-color: red;
 }
