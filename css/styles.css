@@ -2,12 +2,10 @@ body {
 	background: url("../img/cowboybg.png") no-repeat top left;
 	background-size: 100% 100%;
 	background-attachment: fixed;
-
 }
 
 div {
 	margin-bottom: 5px;
 	width: 150px;
-/*	height: 500px;*/
 	background-color: red;
 }
