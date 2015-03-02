@@ -8,6 +8,8 @@
 </head>
 <body>
 	<div>Hello</div>
-	<div></div>
+	<div>
+		<img src="img/ddlogo.png" alt="">
+	</div>
 </body>
 </html>

@@ -1,5 +1,4 @@
 body {
-
 	background: url("../img/cowboybg.png") no-repeat top left;
 	background-size: 100% 100%;
 	background-attachment: fixed;
@@ -9,5 +8,11 @@ body {
 div {
 	margin-bottom: 5px;
 	width: 150px;
-	background-color: red;
+	/*background-color: red;*/
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	position: absolute;
 }
