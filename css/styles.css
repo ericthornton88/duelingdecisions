@@ -1,0 +1,11 @@
+body {
+	background: url('/img/cowboy.jpg') no-repeat;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+}
+div {
+/*	margin-bottom: 5000 px;
+	width: 100px;
+	background-color: red;*/
+}
