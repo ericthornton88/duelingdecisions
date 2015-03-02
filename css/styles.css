@@ -1,8 +1,9 @@
 body {
-	background: url('/img/cowboy.jpg') no-repeat;
+	background: url("/img/cowboy.jpg") no-repeat;
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	left: 0;
+	right: 0;
+	
 }
 div {
 /*	margin-bottom: 5000 px;
