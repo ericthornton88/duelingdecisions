@@ -1,9 +1,9 @@
 
-DROP DATABASE IF EXISTS DuelingDecisions;
+DROP DATABASE IF EXISTS dueling_decisions;
 
-CREATE DATABASE DuelingDecisions;
+CREATE DATABASE dueling_decisions;
 
-USE DuelingDecisions;
+USE dueling_decisions;
 
 CREATE TABLE user (
 user_id INT auto_increment PRIMARY KEY,
