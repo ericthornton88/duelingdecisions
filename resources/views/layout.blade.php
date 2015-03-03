@@ -12,7 +12,8 @@
 			<nav>
 				<a href="/">Home</a>
 				<a href="">New Duel</a>
-				<a href=""></a>
+				<a href="">Sign In</a>
+				<a href="">Logout</a>
 			</nav>
 		@show
 	</header>
