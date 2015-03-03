@@ -9,9 +9,8 @@
 	<header>
 		@section('header')
 			<a href="/"><img src="/img/logo.png" alt="Home" height="100px" width="150px"></a>
-			<a href="/">Home</a>
 			<nav>
-				<a href="">Home</a>
+				<a href="/">Home</a>
 				<a href="">New Duel</a>
 				<a href=""></a>
 			</nav>

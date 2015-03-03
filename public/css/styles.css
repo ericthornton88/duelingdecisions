@@ -1,14 +1,29 @@
+header {
+	min-height: 100px;
+
+}
+
+header img{
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+nav {
+	margin-left: 15%;
+	bottom: 0;
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+}
+
 body {
 	background: url("../img/cowboybg.png") no-repeat top left;
 	background-size: 100% 100%;
 	background-attachment: fixed;
 
-}
-
-div {
-	margin-bottom: 5px;
-	width: 150px;
-	background-color: red;
 }
 
 img {
