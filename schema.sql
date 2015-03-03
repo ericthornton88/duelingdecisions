@@ -16,9 +16,18 @@ datetime_added datetime NOT NULL
 
 );
 
-INSERT INTO user (user_name, email, password, first_name, last_name) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte');
-INSERT INTO user (user_name, email, password, first_name, last_name) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man');
+INSERT INTO user (user_name, email, password, first_name, last_name, datetime_added) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte', 'now()');
+INSERT INTO user (user_name, email, password, first_name, last_name, datetime_added) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man', "now()");
 
+CREATE TABLE category (
+category_id INT auto_increment PRIMARY KEY,
+category_name varchar(255) NOT NULL
+);
+
+INSERT INTO category (category_name) VALUES ('Restaurants');
+INSERT INTO category (category_name) VALUES ('Vacation Spots');
+INSERT INTO category (category_name) VALUES ('Entertainment');
+INSERT INTO category (category_name) VALUES ('Computers');
 
 CREATE TABLE choice (
 choice_id INT auto_increment PRIMARY KEY,
@@ -26,18 +35,37 @@ category_id INT NOT NULL,
 user_id INT NOT NULL,
 details varchar(255) NOT NULL,
 title varchar(255) NOT NULL
-
 );
 
-INSERT INTO choice (title, details) VALUES ('Mc\'Donalds', 'Best burgers on the planet');
-INSERT INTO choice (title, details) VALUES ('Burger King', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', 'Mc\'Donalds', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('Burger King', 'Best burgers on the planet');
 
-CREATE TABLE category (
-category_id INT auto_increment PRIMARY KEY,
-category_name varchar(255) NOT NULL
 
+CREATE TABLE user_choice_feature (
+choice_feature_id INT auto_increment PRIMARY KEY,
+choice_id INT NOT NULL,
+is_positive INT NOT NULL,
+rating INT NOT NULL,
+description varchar(255) NOT NULL
+);
+
+INSERT INTO user_choice_feature (is_positive, rating, description) VALUES (1, '5', 'Best fries!');
+INSERT INTO user_choice_feature (is_positive, rating, description) VALUES (0, '1', 'Worst service');
+
+CREATE TABLE contest (
+contest_id INT auto_increment PRIMARY KEY,
+user_id INT NOT NULL,
+category_id INT NOT NULL,
+datetime datetime NOT NULL,
+current_round INT NOT NULL,
+is_open INT NOT NULL
 );
 
 
-
-
+CREATE TABLE contest_choice (
+contest_id INT NOT NULL,
+choice_id INT NOT NULL,
+round INT NOT NULL,
+is_selected INT NOT NULL,
+PRIMARY KEY (contest_id, choice_id)
+);
