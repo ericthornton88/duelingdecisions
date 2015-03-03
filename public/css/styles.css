@@ -29,3 +29,20 @@ img {
 	height: 100px;
 	position: absolute;
 }
+
+main {
+	overflow:hidden;
+}
+.brief-info, .credentials {
+	float: left;
+	background: rgba(240, 240, 240, 0.2);
+	overflow: hidden;
+	border-radius: 15px;
+	width: 45%;
+	margin: 5px;
+	padding: 10px;
+}
+
+.credentials {
+	left: 52%;
+}
