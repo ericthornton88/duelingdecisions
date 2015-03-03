@@ -3,13 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dueling Decisions</title>
-	<link rel="stylesheet" href="/public/css/app.css">
-	<link rel="stylesheet" href="/public/css/styles.css">
+	<link rel="stylesheet" href="<?php echo asset('css/styles.css')?>" type="text/css">
 </head>
 <body>
 	<header>
 		@section('header')
-			<a href="/"><img src="/img/logo.png" alt="Home"></a>
+			<a href="/"><img src="/img/logo.png" alt="Home" height="100px" width="150px"></a>
 			<a href="/">Home</a>
 			<nav>
 				<a href="">Home</a>
