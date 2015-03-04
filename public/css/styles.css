@@ -2,44 +2,57 @@
 Header Section
 ******/
 header {
-	min-height: 100px;
-	background-color: orange;
+	/*margin-bottom: 25px;*/
 }
 
-.logo {
+img {
+	width: 150px;
+	height: 100px;
 	position: absolute;
-	top: 0;
-	left: 0;
 }
+
 nav {
-	background-color: green;
 	text-align: center;
+	font-size: 30px;
+	color: #FEE469;
+	text-shadow: 1px 1px 1px #15A2ED;
 }
 
 nav a {
 	display: inline-block;
 	text-decoration: none;
 	padding: 10px;
+	font-size: 30px;
+	color: white;
+	text-shadow: 1px 1px 1px #15A2ED;
+	font-weight: bold;
 }
 
 /****** 
 Main Body Section
 ******/
 body {
-	background: url("../img/cowboybg.png") no-repeat top left;
-	background-size: 100% 100%;
-	min-height: 1100px;
-	background-attachment: fixed;
+	background: url("/img/cowboybg.png") no-repeat;
+	font-family: PT Sans;
+}
+
+.aftermain {
+	min-height: 465px;
 }
 
 h1 {
-	font-family: 'Orbitron';
 	text-align: center;
+}
+
+h3 {
+	font-size: 20px;
+	color: white;
+	text-shadow: .5px .5px .5px #336699;
+	font-weight: bold;
 }
 
 div {
 	margin-bottom: 5px;
-	background-color: red;
 }
 
 .hero {
@@ -47,46 +60,34 @@ div {
 	margin: 0 auto;
 }
 
-img {
-	width: 100px;
-	height: 100px;
-	position: absolute;
-}
-
 main {
 	overflow:hidden;
 }
 
-.brief-info {
-	margin: 10px;
-	float: left;
-	background-color: rgba(126, 194, 231, 0.2);
+.main-container-holder {
+	margin-top: 100px;
 }
 
-.brief-info, .credentials {
+.main-container {
 	text-align: center;
 	overflow: hidden;
 	border-radius: 15px;
-	width: 45%;
-	margin: 5px;
+	width: 35%;
 	padding: 10px;
-	min-height: 220px;
+	height: 250px;
+	display: inline-block;
+	background-color: rgba(126, 194, 231, 0.2);
 }
 
-
-.logo {
-	margin-left: 70%;
-
-}	
-
-.logo img {
-	height: 150px;
-	width: 150px;
+.details {
+	float: left;
+	margin-left: 75px;
+	background-color: rgba(126, 194, 231, 0.2);
 }
 
-
-.credentials {
+.login {
 	float: right;
+	margin-right: 60px;
 	background-color: rgba(176, 226, 251, 0.2);
 }
 
@@ -111,11 +112,27 @@ main {
 Footer Section
 ******/
 footer {
-	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: blue;
+	margin-bottom: 10px;
+}
+
+footer div {
+	font-family: Lobster;
+	color: #9C6A36;
+	text-shadow: 1px 1px 1px white;
+	display: inline-block;
+	padding: 10px;
+	position: absolute;
+}
+
+.copyright {
+	margin-left: 320px;
+}
+
+.author {
+	margin-left: 840px;
 }
 
 .options {
