@@ -5,12 +5,13 @@
 	<title>Dueling Decisions</title>
 	<link rel="stylesheet" href="<?php echo asset('css/normalize.css')?>" type="text/css">
 	<link rel="stylesheet" href="<?php echo asset('css/styles.css')?>" type="text/css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:900,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	
 	@section('header')
 		<div class="hero">
-			<a href="/"><img src="/img/logo.png" alt="Home" height="100px" width="150px"></a>
 			<nav>
 				<a href="/">Home</a>
 				<a href="">New Duel</a>
