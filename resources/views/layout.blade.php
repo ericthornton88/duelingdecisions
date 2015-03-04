@@ -12,6 +12,7 @@
 <body>
 	
 	@section('header')
+	<header>
 		<div class="hero">
 			<a href="/"><img src="/img/logo.png" alt="Dueling Decisions"></a>
 			<nav>
@@ -21,8 +22,8 @@
 				<a href="logout">Logout</a>
 			</nav>
 		</div>	
-	@show
 	</header>
+	@show
 	
 	<main>
 		@yield('main_content')

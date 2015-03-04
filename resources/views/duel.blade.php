@@ -3,7 +3,7 @@
 @section('main_content')
 	<h1>Your Duel...</h1>
 	<main>
-		<div>
+		<div class="firstChoice">
 			<h3>Choice 1 Name</h3>
 			<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>
 			<ul>Pros
@@ -24,7 +24,7 @@
 				<button>Submit</button>
 			</form>
 		</div>
-		<div>
+		<div class="secondChoice">
 			<h3>Choice 2 Name</h3>
 			<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>
 			<ul>Pros
