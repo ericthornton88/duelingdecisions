@@ -38,7 +38,7 @@ body {
 }
 
 .aftermain {
-	min-height: 450px;
+	min-height: 410px;
 }
 
 h1 {
@@ -74,7 +74,7 @@ main {
 	overflow: hidden;
 	border-radius: 15px;
 	width: 35%;
-	padding: 10px;
+	padding: 30px;
 	min-height: 250px;
 	display: inline-block;
 	background-color: rgba(126, 194, 231, 0.2);
