@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="<?php echo asset('css/styles.css')?>" type="text/css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Orbitron:900,400' rel='stylesheet' type='text/css'>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 </head>
 <body>
 	
