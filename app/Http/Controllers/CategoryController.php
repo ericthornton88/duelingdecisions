@@ -1,16 +1,18 @@
 <?php namespace App\Http\Controllers;
 
 use App\Library\CategoryModel;
+use App\Library\ChoiceModel;
 use DB;
 
 class CategoryController extends Controller {
 
 
 	public function getCategories() {
-		$all = new CategoryModel();
-		$all_categories = $all->getCategory();
+		$category = new CategoryModel();
+		$all_categories = $category->getCategory();
 		print_r($all_categories);
 		
+
 
 		return view('/category/all', ['category'=>$all_categories]);
 	}

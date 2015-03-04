@@ -40,6 +40,11 @@ title varchar(255) NOT NULL
 
 INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Mc\'Donalds', 'Best burgers on the planet');
 INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Burger King', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('2', '1', 'Hawaii', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('2', '1', 'Cozumel', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('3', '1', 'Lazer Tag', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('3', '1', 'Bowling', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('4', '1', 'MacBook', 'Best burgers on the planet');
 
 
 CREATE TABLE user_choice_feature (
