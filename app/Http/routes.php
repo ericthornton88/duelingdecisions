@@ -16,7 +16,10 @@ Route::get('registration', 'RegistrationController@index');
 Route::get('registration/adduser', 'RegistrationController@addUser');
 
 
-
+/*** 
+Choice Routes
+***/
+Route::get('/choice/new', function(){return view("choice/newChoice");});
 
 
 /*** 
