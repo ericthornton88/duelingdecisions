@@ -16,8 +16,9 @@ datetime_added datetime NOT NULL
 
 );
 
-INSERT INTO user (user_name, email, password, first_name, last_name, datetime_added) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte', 'now()');
-INSERT INTO user (user_name, email, password, first_name, last_name, datetime_added) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man', "now()");
+
+INSERT INTO user (user_name, email, password, first_name, last_name, datetime_added) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte', NOW());
+INSERT INTO user (user_name, email, password, first_name, last_name, datetime_added) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man', NOW());
 
 CREATE TABLE category (
 category_id INT auto_increment PRIMARY KEY,
@@ -37,8 +38,8 @@ details varchar(255) NOT NULL,
 title varchar(255) NOT NULL
 );
 
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', 'Mc\'Donalds', 'Best burgers on the planet');
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('Burger King', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Mc\'Donalds', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Burger King', 'Best burgers on the planet');
 
 
 CREATE TABLE user_choice_feature (
@@ -62,6 +63,10 @@ is_open INT NOT NULL
 );
 
 
+INSERT INTO contest (user_id, category_id, datetime, current_round, is_open) VALUES (1, 2, NOW(), 6, 0);
+INSERT INTO contest (user_id, category_id, datetime, current_round, is_open) VALUES (2, 2, NOW(), 3, 1);
+
+
 CREATE TABLE contest_choice (
 contest_id INT NOT NULL,
 choice_id INT NOT NULL,
@@ -69,3 +74,7 @@ round INT NOT NULL,
 is_selected INT NOT NULL,
 PRIMARY KEY (contest_id, choice_id)
 );
+
+INSERT INTO contest_choice (contest_id, choice_id, round, is_selected) VALUES (1, 2, 1, 1);
+INSERT INTO contest_choice (contest_id, choice_id, round, is_selected) VALUES (1, 3, 2, 0);
+
