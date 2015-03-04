@@ -16,8 +16,8 @@ datetime_added datetime NOT NULL
 
 );
 
-INSERT INTO user (user_name, email, password, first_name, last_name) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte');
-INSERT INTO user (user_name, email, password, first_name, last_name) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man');
+INSERT INTO user (user_name, email, password, first_name, last_name, datetime_added) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte', NOW());
+INSERT INTO user (user_name, email, password, first_name, last_name, datetime_added) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man', NOW());
 
 
 CREATE TABLE choice (
