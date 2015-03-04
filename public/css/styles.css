@@ -8,7 +8,7 @@ header img{
 	display: block;
 }
 h1 {
-	margin-left: 38%;
+	margin-left: 30%;
 	font-family: 'Orbitron';
 }
 
@@ -94,36 +94,20 @@ main {
 }
 
 .credentials {
-<<<<<<< HEAD
 	float: right;
 	margin-top: 100px;
 	background-color: rgba(176, 226, 251, 0.2);
-=======
-	margin-top: 200px;
-	background-color: rgba(176, 226, 251, 0.2);
-	position: fixed;
-	margin: 20% 52%;
-
->>>>>>> 7717d0bf283472f52bb5b0b4979a9a3935760335
 }
 
-.cloud {
+/*.cloud {
 	color: white;
 	margin-left: 20%;
 	font-size: 30px;
-<<<<<<< HEAD
-=======
-
-}
+}*/
 
 .brief-info {
-	position: fixed;
-	margin: 15% 1%;
-	margin-top: 200px;
+	margin-top: 100px;
 	background-color: rgba(126, 194, 231, 0.2);
-
-
->>>>>>> 7717d0bf283472f52bb5b0b4979a9a3935760335
 }
 
 .credentials div {
