@@ -101,11 +101,11 @@ main {
 	background-color: rgba(176, 226, 251, 0.2);
 }
 
-/*.cloud {
+.cloud {
 	color: white;
 	margin-left: 20%;
 	font-size: 30px;
-}*/
+}
 
 .brief-info {
 	margin-top: 100px;
