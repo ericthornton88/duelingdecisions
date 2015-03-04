@@ -75,7 +75,7 @@ main {
 	border-radius: 15px;
 	width: 35%;
 	padding: 10px;
-	height: 250px;
+	min-height: 250px;
 	display: inline-block;
 	background-color: rgba(126, 194, 231, 0.2);
 }
@@ -83,13 +83,35 @@ main {
 .details {
 	float: left;
 	margin-left: 75px;
-	background-color: rgba(126, 194, 231, 0.2);
+	background-color: rgba(126, 194, 231, 0.3);
 }
 
 .login {
 	float: right;
 	margin-right: 60px;
 	background-color: rgba(176, 226, 251, 0.2);
+}
+
+.col-md-6 input {
+	background-color: #B2E2FA;
+	border: 1px solid white;
+	border-radius: 5px; 
+	height: 30px;
+	font-size: 20px;
+	width: 250px;
+}
+
+.login h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.btn-primary {
+	background-color: #3378A6;
+	border: 1px solid #3378A6;
+	border-radius: 3px;
+	color: white;
+	padding: 5px 10px;
 }
 
 .cloud {
