@@ -7,7 +7,7 @@ $(function(){
 	}
 
 
-	$('table').on('click', 'td', function(){
-		$(this).toggleClass('expand');
+	$('ul').on('click', 'li', function(){
+		$(this).parents('ul').toggleClass('expand');
 	});
 });
