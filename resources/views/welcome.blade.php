@@ -22,7 +22,7 @@
 			</form>
 			<div>
 				Not a member? 
-				<a href="">Register Here</a>
+				<a href="/registration">Register Here</a>
 			</div>
 		</div>
 	</main>

@@ -5,7 +5,7 @@
 	Register to duel!
 </div>
 <div>
-	<form action="">
+	<form action="registration/adduser"> {{-- Where does this send to? --}}
 		Full Name: <input type="text">
 		Email: <input type="text">
 		Password: <input type="password">
