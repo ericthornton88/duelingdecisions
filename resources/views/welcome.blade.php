@@ -2,8 +2,8 @@
 
 @section('main_content')
 	<h1>Your Decisions in the Ring!</h1>
+	<span class="cloud"><i class="fa fa-cloud fa-5x"></i></span>
 	<main>
-		<span class="cloud"><i class="fa fa-cloud fa-5x"></i></span>
 		<div class="brief-info">
 			<h3>Having doubts about registering?</h3>
 			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptate 
