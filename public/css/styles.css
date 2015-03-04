@@ -1,0 +1,48 @@
+header {
+	min-height: 100px;
+}
+
+header img{
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+nav {
+	margin-left: 15%;
+}
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px;
+}
+
+body {
+	background: url("../img/cowboybg.png") no-repeat top left;
+	background-size: 100% 100%;
+	min-height: 960px;
+	background-attachment: fixed;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+main {
+	overflow:hidden;
+}
+.brief-info, .credentials {
+	float: left;
+	background: rgba(240, 240, 240, 0.2);
+	overflow: hidden;
+	border-radius: 15px;
+	width: 45%;
+	margin: 5px;
+	padding: 10px;
+}
+
+.credentials {
+	left: 52%;
+}
