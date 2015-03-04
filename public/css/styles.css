@@ -117,3 +117,12 @@ footer {
 	right: 0;
 	background-color: blue;
 }
+
+.options {
+	display:none;
+	background-color: #fff;
+}
+
+.expand .options {
+	display: block;
+}
