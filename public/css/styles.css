@@ -2,17 +2,30 @@ body {
 	background: url("../img/cowboybg.png") no-repeat top left;
 	background-size: 100% 100%;
 	background-attachment: fixed;
+}
 
+header {
+	min-height: 120px;
+	border-radius: 5px;
+}
+
+header > nav {
+	background-color: green;
+	float: right;
+}
+
+header img {
+	width: 150px;
+	height: 100px;
+	position: absolute;
 }
 
 div {
 	margin-bottom: 5px;
-	width: 150px;
 	background-color: red;
 }
 
-img {
-	width: 100px;
-	height: 100px;
-	position: absolute;
+.hero {
+	width: 960px;
+	margin: 0 auto;
 }

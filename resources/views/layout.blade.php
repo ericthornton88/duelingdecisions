@@ -3,20 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dueling Decisions</title>
+	<link rel="stylesheet" href="<?php echo asset('css/normalize.css')?>" type="text/css">
 	<link rel="stylesheet" href="<?php echo asset('css/styles.css')?>" type="text/css">
 </head>
 <body>
-	<header>
-		@section('header')
-			<a href="/"><img src="/img/logo.png" alt="Home" height="100px" width="150px"></a>
-			<a href="/">Home</a>
-			<nav>
-				<a href="">Home</a>
-				<a href="">New Duel</a>
-				<a href=""></a>
-			</nav>
-		@show
-	</header>
+	<div class="hero">
+		<div>
+			<header>
+				@section('header')
+					<a href="/"><img src="/img/logo.png" alt="Home"></a>
+					<nav>
+						<a href="">Home</a>
+						<a href="">New Duel</a>
+						<a href="">Something</a>
+					</nav>
+				@show
+			</header>
+		</div>
+	</div>
 	
 	<main>
 		@yield('main_content')
