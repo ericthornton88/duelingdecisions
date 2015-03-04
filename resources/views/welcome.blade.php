@@ -49,7 +49,7 @@
 						<div class="col-md-6 col-md-offset-4">
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" name="remember"> Remember Me
+									<input type="checkbox" name="remember" class="check"> Remember Me
 								</label>
 							</div>
 						</div>
@@ -65,7 +65,7 @@
 				</form>
 				<div>
 					Not a member? 
-					<a href="/registration">Register Here</a>
+					<a class="btn-link"href="/registration">Register Here</a>
 				</div>
 			</div>
 		</div>

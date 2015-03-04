@@ -90,11 +90,13 @@ main {
 	float: right;
 	margin-right: 60px;
 	background-color: rgba(176, 226, 251, 0.2);
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
-.col-md-6 input {
-	background-color: #B2E2FA;
-	border: 1px solid white;
+.col-md-6 > input {
+	background-color: transparent;
+	border: 2px solid white;
 	border-radius: 5px; 
 	height: 30px;
 	font-size: 20px;
@@ -102,16 +104,20 @@ main {
 }
 
 .login h3 {
-	margin-top: 10px;
+	margin-top: 0;
 	margin-bottom: 10px;
 }
 
 .btn-primary {
 	background-color: #3378A6;
 	border: 1px solid #3378A6;
-	border-radius: 3px;
+	border-radius: 5px;
 	color: white;
 	padding: 5px 10px;
+}
+
+.btn-link {
+	color: white;
 }
 
 .cloud {
