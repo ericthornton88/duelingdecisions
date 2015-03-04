@@ -9,6 +9,7 @@ Route::get('duel', "addcontrollerhere");
 
 Route::get('registration', 'RegistrationController@index');
 
+Route::get('logout', function(){return view("logout");});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
