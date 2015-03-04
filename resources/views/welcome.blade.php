@@ -1,11 +1,13 @@
 @extends('layout')
 
 @section('main_content')
+
 		<div class="logo"><a href="/"><img src="/img/logo.png" alt="Home"></a> </div>
 
 
 	<h1>Your Decisions in the Ring!</h1>
 	<span class="cloud"><i class="fa fa-cloud fa-5x"></i></span>
+
 	<main>
 		<div class="brief-info">
 			<h3>Having doubts about registering?</h3>

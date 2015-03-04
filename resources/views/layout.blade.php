@@ -16,7 +16,7 @@
 				<a href="/">Home</a>
 				<a href="">New Duel</a>
 				<a href="">Sign In</a>
-				<a href="">Logout</a>
+				<a href="logout">Logout</a>
 			</nav>
 		</div>	
 	@show
