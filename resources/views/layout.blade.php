@@ -12,10 +12,11 @@
 	
 	@section('header')
 		<div class="hero">
+			<a href="/"><img src="/img/logo.png" alt="Dueling Decisions"></a>
 			<nav>
 				<a href="/">Home</a>
-				<a href="">New Duel</a>
-				<a href="">Sign In</a>
+				<a href="/profile">New Duel</a>
+				<a href="/">Sign In</a>
 				<a href="logout">Logout</a>
 			</nav>
 		</div>	
