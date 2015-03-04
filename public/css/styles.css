@@ -65,6 +65,14 @@ img {
 main {
 	overflow:hidden;
 }
+
+.brief-info {
+	margin: 10px;
+	float: left;
+	margin-top: 100px;
+	background-color: rgba(126, 194, 231, 0.2);
+}
+
 .brief-info, .credentials {
 	text-align: center;
 	overflow: hidden;
@@ -87,25 +95,14 @@ main {
 
 .credentials {
 	float: right;
-	margin-top: 200px;
+	margin-top: 100px;
 	background-color: rgba(176, 226, 251, 0.2);
-
 }
 
 .cloud {
 	color: white;
 	margin-left: 20%;
 	font-size: 30px;
-
-}
-
-.brief-info {
-	margin: 10px;
-	float: left;
-	margin-top: 200px;
-	background-color: rgba(126, 194, 231, 0.2);
-
-
 }
 
 .credentials div {

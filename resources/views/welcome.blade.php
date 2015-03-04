@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('main_content')
-	<h1>Your Decisions in the Ring!</h1>
+	<h1>Your Decision is in the Ring!</h1>
 	<main>
 		<span class="cloud"><i class="fa fa-cloud fa-5x"></i></span>
 		<div class="brief-info">
