@@ -22,7 +22,7 @@
 				<a href="/">Home</a> |
 				<a href="/profile"> New Duel</a> |
 				<a href="/"> Sign In</a> |
-				<a href="logout"> Logout</a> |
+				<a href="logout"> Logout</a>
 			</nav>
 		</div>	
 	</header>
