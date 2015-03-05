@@ -15,7 +15,7 @@ class ChoiceController extends Controller {
 	}
 
 	public function newChoice() {
-
+		
 	}
 
 }
