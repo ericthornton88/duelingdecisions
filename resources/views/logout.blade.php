@@ -1,17 +1,19 @@
 @extends('layout')
 
 @section('main_content')
-	<h1>Your Decision is in the Ring!</h1>
-	{{-- <span class="cloud"><i class="fa fa-cloud fa-5x"></i></span> --}}
+	<h1>Had enough?</h1>
 	<main>
-		<h2>Can't take the dueling?</h2>
-		<p>Are you sure you want to log out?</p>
-		<form action="">
-			<button>Log Out</button>
-		</form>
-		<p>Did you want to stay logged in?
-		<a href="/">Home</a>
-		</p>
+		<div>
+			<p>Are you sure you want to log out?</p>
+			<form action="">
+				<button>Log Out</button>
+			</form>		
+		</div>
+		<div>
+			<p>Did you want to stay logged in?
+				<a href="/">Home</a>
+			</p>
+		</div>
 	</main>
 @endsection
 
