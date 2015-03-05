@@ -32,11 +32,13 @@
 		@yield('main_content')
 	</main>
 	<div class="aftermain"></div>
-	<footer>
-		@section('footer')
-			<div class="copyright">&copy 2015</div>
-			<div class="author">Written by Thor, Taco, &amp Drag</div>
-		@show
-	</footer>
+	@section('footer')
+		<footer>
+			<div>
+				&copy 2015: 
+				Written by Thor, Taco, &amp Drag
+			</div>
+		</footer>
+	@show
 </body>
 </html>
