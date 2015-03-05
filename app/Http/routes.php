@@ -22,6 +22,10 @@ Route::get('profile', 'CategoryController@getAllCategories');
 Choice Routes
 ***/
 Route::get('/choice/new', function(){return view("choice/newChoice");});
+<<<<<<< HEAD
+=======
+Route::post('/choice/new', 'ChoiceController@addChoice');
+>>>>>>> f80d471fd6d8d3ae0a030d1ea0c0de629c6fe4db
 
 
 /*** 
