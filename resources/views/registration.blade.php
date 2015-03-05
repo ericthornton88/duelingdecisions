@@ -1,9 +1,5 @@
 @extends('layout')
 
-@section ('header')
-
-@endsection
-
 @section('main_content')
 <div>
 	Register to duel!
