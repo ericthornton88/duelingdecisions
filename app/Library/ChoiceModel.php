@@ -1,5 +1,6 @@
 <?php 
 namespace App\Library;
+use Request;
 use DB;
 //class here. 
 //name php file exactly what you make the class name.
@@ -17,7 +18,11 @@ class ChoiceModel {
 
 		
 	public function newChoice($user_id, $category_id) {
-	
+		$user_id = Request::input('user_id');
+		$categry_id = Request::input('categry_id');
+		$details = Request::input('details');
+		$title = Request::input('title');
+
 		DB::insert(
 			'INSERT INTO choice 
 			(category_id, user_id, details, title) 
@@ -28,11 +33,15 @@ class ChoiceModel {
 			 ':title' 		=> $title,
 			]);
 		$insert_id = DB::getPdo()->lastInsertId();
-		return userChoiceFeature($insert_id);
-	};	
-	
+		// return userChoiceFeature($insert_id);	
+	// }
 
-	public function userChoiceFeature($insert_id){
+	// public function userChoiceFeature($insert_id){
+		$is_positive = Request::input('is_positive');
+		// $insert_id = Request::input('insert_id');
+		$rating = Request::input('rating');
+		$description = Request::input('description');
+
 		DB::insert(
 			'INSERT INTO user_choice_feature 
 			(choice_id, is_positive, rating, description) 
