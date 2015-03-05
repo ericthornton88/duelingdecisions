@@ -38,7 +38,7 @@
 			
 				<form action="">
 					<fieldset class="options">
-					 for="option3"><input type="checkbox" value="3">Option 3</label>
+					
 					</fieldset>
 				<button>Start my duel!</button>
 				</form>

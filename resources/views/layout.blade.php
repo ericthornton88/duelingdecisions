@@ -23,6 +23,10 @@
 				<a href="/"> Sign In</a> |
 				<a href="logout"> Logout</a>
 			</nav>
+			<h1>
+			@section('title')
+			@show
+			</h1>
 		</div>	
 	</header>
 	@show
@@ -31,8 +35,8 @@
 		@yield('main_content')
 	</main>
 	
-	<div class="aftermain"></div>
-	@section('footer')
+{{-- 	<div class="aftermain"></div> --}}
+		@section('footer')
 		<footer>
 			<div>
 				&copy 2015: 
