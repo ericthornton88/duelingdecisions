@@ -177,3 +177,16 @@ JavaScript Classes
 .expand .options {
 	display: block;
 }
+
+
+/*
+****************
+Category/all.blade.php CSS
+****************
+*/
+
+.cat-container {
+float: left;
+background-color: red;
+
+}

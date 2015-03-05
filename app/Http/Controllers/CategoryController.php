@@ -9,9 +9,7 @@ class CategoryController extends Controller {
 
 	public function getCategories() {
 		$category = new CategoryModel();
-		$all_categories = $category->getCategory();
-		print_r($all_categories);
-		
+		$all_categories = $category->getCategory();		
 
 
 		return view('/category/all', ['category'=>$all_categories]);
