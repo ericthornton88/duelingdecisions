@@ -6,7 +6,9 @@
 	<div class="main-cat-container">
 		<?php $cur_cat = ''; ?>
 		<div class="cat-container">
-		<ul class="category">
+
+		{{-- LOBATAMIZED OWL GOES HERE KRISTIN --}}
+		{{-- <ul class="category"> --}}
 		@foreach($category as $cat)
 			@if($cur_cat == $cat->category_name)
 				<div class="options">{{$cat->title}}</div>

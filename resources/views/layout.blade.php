@@ -31,7 +31,7 @@
 	<main>
 		@yield('main_content')
 	</main>
-	<div class="aftermain"></div>
+	
 	<footer>
 		@section('footer')
 			<div class="copyright">&copy 2015</div>

@@ -10,4 +10,11 @@ $(function(){
 	$('ul').on('click', 'li', function(){
 		$(this).parents('ul').toggleClass('expand');
 	});
+
+
+	$('form').on('focus', 'option', function(){
+		$(this).toggleClass
+	});
+
+
 });

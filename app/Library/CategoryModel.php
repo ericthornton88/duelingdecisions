@@ -6,14 +6,22 @@ use DB;
 //a new file for a new class
 class CategoryModel {
 	
-	public function getCategory() {
+	public function getAllCategoryChoice() {
 		$results = DB::select('
-		SELECT category_name, title 
+		SELECT category_name, title, category_id 
 		FROM category
 		LEFT JOIN choice using (category_id) 
 		order by category_name
 		');
 		
+		return $results;
+	}
+
+	public function getAllCategories() {
+		$results = DB::select('
+			SELECT * 
+			from category
+			');
 		return $results;
 	}
 }
