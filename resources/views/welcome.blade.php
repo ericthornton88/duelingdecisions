@@ -14,8 +14,8 @@
 				<a href="#">More...</a>
 			<!-- </div> -->
 			</div>
-		</div>
-		<div class="main-container-holder">
+		{{-- </div> --}}
+		{{-- <div class="main-container-holder"> --}}
 			<div class="main-container login">
 				<h3>Login here:</h3>
 				@if (count($errors) > 0)
@@ -68,5 +68,5 @@
 					<a class="btn-link"href="/registration">Register Here</a>
 				</div>
 			</div>
-		</div>
+		{{-- </div> --}}
 @endsection
