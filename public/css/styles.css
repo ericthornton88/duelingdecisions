@@ -177,6 +177,17 @@ footer div {
 	border-radius: 5px;
 }
 
+footer > div:nth-child(2) {
+	border: 1px solid black;
+	float: right;
+	
+}
+
+footer a {
+	color: #9C6A36;
+	text-shadow: 1px 1px 1px rgb(223, 153, 68);
+}
+
 .copyright {
 	margin-left: 300px;
 }

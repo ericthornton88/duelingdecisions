@@ -10,7 +10,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="../JavaScript/main.js"></script>
-
 </head>
 <body>
 	
@@ -37,6 +36,11 @@
 			<div>
 				&copy 2015: 
 				Written by Thor, Taco, &amp Drag
+			</div>
+			<div>
+				<div><a href="">Home</a></div>
+				<div><a href="">Details</a></div>
+				<div><a href="">Login</a></div>
 			</div>
 		</footer>
 	@show
