@@ -186,8 +186,22 @@ Category/all.blade.php CSS
 ****************
 */
 
-.cat-container {
-float: left;
-background-color: red;
+.main-cat-container {
+	overflow: hidden;
+	min-height: 60px;
+	
+}
 
+.cat-container {
+	position:absolute;
+	background-color: red;
+	overflow: hidden;
+	left: 50%;
+	width: 150px;
+	margin-left: -75px;
+
+}
+
+.category {
+	float:left;
 }
