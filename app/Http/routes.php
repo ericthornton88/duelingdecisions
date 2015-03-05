@@ -21,7 +21,7 @@ Route::get('category/new', 'CategoryController@getCategories');
 Choice Routes
 ***/
 Route::get('/choice/new', function(){return view("choice/newChoice");});
-Route::post('/choice/new', 'ChoiceController@');});
+Route::post('/choice/new/{user_id}/{category_id}', 'ChoiceController@newChoice');
 
 
 /*** 
