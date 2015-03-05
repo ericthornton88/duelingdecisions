@@ -12,8 +12,9 @@ $(function(){
 	});
 
 
-	$('form').on('focus', 'option', function(){
-		$(this).toggleClass
+	$(document).on('click', 'form', function(){
+		$('.options').parents('form').toggleClass('expand')
+
 	});
 
 
