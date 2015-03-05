@@ -26,9 +26,14 @@ Route::post('/choice/new', 'ChoiceController@addChoice');
 
 
 /*** 
-These routes need controllers and methods added to them.
+Duel Routes
 ***/
-Route::get('duel', "addcontrollerhere");
 Route::get('duel', function(){return view("duel");});
+
+
+/*** 
+Logging out Routes. 
+***/
 Route::get('logout', function(){return view("logout");});
+// This route needs functionality to actually log users out. 
 
