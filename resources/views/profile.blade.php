@@ -35,14 +35,10 @@
 				</form>
 				<a href="">View Categories</a>
 				<h4>Choose your options:</h4>
-				<p></p>
+			
 				<form action="">
-					<label>Check All:<input type="checkbox"></label>
-					<fieldset>
-						{{-- These will be populated from the database. --}}
-						<label for="option1"><input type="checkbox" value="1">Option 1</label>
-						<label for="option2"><input type="checkbox" value="2">Option 2</label>
-						<label for="option3"><input type="checkbox" value="3">Option 3</label>
+					<fieldset class="options">
+					 for="option3"><input type="checkbox" value="3">Option 3</label>
 					</fieldset>
 				<button>Start my duel!</button>
 				</form>

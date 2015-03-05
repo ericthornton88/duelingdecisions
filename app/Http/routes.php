@@ -15,6 +15,7 @@ New Registration Routes
 Route::get('registration', 'RegistrationController@index');
 Route::get('registration/adduser', 'RegistrationController@addUser');
 Route::get('category/all', 'CategoryController@getCategories');
+Route::get('profile', 'CategoryController@getAllCategories');
 
 
 /*** 
@@ -27,7 +28,6 @@ Route::post('/choice/new', 'ChoiceController@addChoice');
 /*** 
 These routes need controllers and methods added to them.
 ***/
-Route::get('profile', function(){return view("profile");});
 Route::get('duel', "addcontrollerhere");
 Route::get('logout', function(){return view("logout");});
 
