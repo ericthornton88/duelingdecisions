@@ -2,7 +2,7 @@
 
 @section("title")
 	Had enough?
-@show
+@endsection
 
 @section('main_content')
 	<div>

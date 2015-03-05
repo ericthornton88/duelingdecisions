@@ -2,7 +2,7 @@
 
 @section("title")
 	Your Duel...
-@show
+@endsection
 
 @section('main_content')
 	<div>
