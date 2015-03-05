@@ -43,6 +43,20 @@ body {
 	font-family: PT Sans;
 }
 
+/*.img-container {
+	background-color: yellow;
+}
+
+.cloud {
+	color: white;
+	display: inline-block;
+}
+
+.2 {
+	position: absolute;
+	display: inline-block;
+}*/
+
 .aftermain {
 	min-height: 410px;
 	background-color: green;
@@ -146,23 +160,25 @@ footer {
 	left: 0;
 	right: 0;
 	margin-bottom: 10px;
+	background-color: orange;
+	overflow: hidden;
+	min-height: 10px;
 }
 
 footer div {
 	font-family: Lobster;
 	color: #9C6A36;
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 1px 1px 1px rgb(223, 153, 68);
+	border-radius: 5px;;
 	display: inline-block;
 	padding: 10px;
-	position: absolute;
+	/*position: absolute;*/
+	background-color: rgba(223, 153, 68, .5);
+	border-radius: 5px;
 }
 
 .copyright {
-	margin-left: 320px;
-}
-
-.author {
-	margin-left: 840px;
+	margin-left: 300px;
 }
 
 /*
