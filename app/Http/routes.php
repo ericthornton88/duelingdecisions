@@ -21,7 +21,8 @@ Route::get('category/all', 'CategoryController@getCategories');
 Choice Routes
 ***/
 Route::get('/choice/new', function(){return view("choice/newChoice");});
-Route::post('choice/new', 'ChoiceController@newChoice');
+Route::post('/choice/new', 'ChoiceController@addChoice');
+
 
 /*** 
 These routes need controllers and methods added to them.
