@@ -3,7 +3,7 @@
 @section("title")
 	Had enough?
 @endsection
-
+s
 @section('main_content')
 	<div>
 		<p>Are you sure you want to log out?</p>

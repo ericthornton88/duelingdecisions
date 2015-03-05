@@ -1,9 +1,11 @@
 @extends('layout')
 
+@section('title')
+Register to Duel!
+@endsection
+
+
 @section('main_content')
-<div>
-	Register to duel!
-</div>
 <div>
 	<form action="registration/adduser"> {{-- Where does this send to? --}}
 		Full Name: <input type="text">
