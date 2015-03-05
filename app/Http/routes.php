@@ -28,6 +28,6 @@ Route::post('/choice/new', 'ChoiceController@addChoice');
 These routes need controllers and methods added to them.
 ***/
 Route::get('profile', function(){return view("profile");});
-Route::get('duel', "addcontrollerhere");
+Route::get('duel', function(){return view("duel");});
 Route::get('logout', function(){return view("logout");});
 
