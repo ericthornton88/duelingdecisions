@@ -19,8 +19,8 @@ updated_at datetime NOT NULL
 );
 
 
-INSERT INTO user (user_name, email, password, first_name, last_name, created_at) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte', NOW());
-INSERT INTO user (user_name, email, password, first_name, last_name, created_at) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man', NOW());
+INSERT INTO user (user_name, email, password, first_name, last_name, created_at, updated_at) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte', NOW());
+INSERT INTO user (user_name, email, password, first_name, last_name, created_at, updated_at) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man', NOW());
 
 CREATE TABLE category (
 category_id INT auto_increment PRIMARY KEY,
