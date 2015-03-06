@@ -31,4 +31,7 @@ These routes need controllers and methods added to them.
 Route::get('duel', "addcontrollerhere");
 Route::get('duel', function(){return view("duel");});
 Route::get('logout', function(){return view("logout");});
-
+/***
+Ajax Routes
+***/
+Route::get('/choice/{id}', 'AjaxController@getChoice');
