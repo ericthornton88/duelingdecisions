@@ -17,12 +17,12 @@
 	<header>
 		<div class="hero">
 			<a href="/"><img src="/img/logo2.png" alt="Dueling Decisions"></a>
-			<nav>
+			{{-- <nav>
 				<a href="/">Home</a> |
 				<a href="/profile"> New Duel</a> |
 				<a href="/"> Sign In</a> |
 				<a href="logout"> Logout</a>
-			</nav>
+			</nav> --}}
 			<h1>
 			@section('title')
 			@show
