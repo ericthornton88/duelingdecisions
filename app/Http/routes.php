@@ -34,6 +34,13 @@ Route::get('duel', function(){return view("duel");});
 /*** 
 Logging out Routes. 
 ***/
-Route::get('logout', function(){return view("logout");});
 // This route needs functionality to actually log users out. 
+Route::get('logout', function(){return view("logout");});
+
+/***
+Ajax Routes
+***/
+Route::get('/choice/{id}', 'AjaxController@getChoice');
+
+
 

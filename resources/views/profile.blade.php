@@ -6,6 +6,7 @@ What's your duel of the day?
 @endsection
 
 @section('main_content')
+
 	<div>
 		{{-- Ensure these links actually go to the appropriate pages. --}}
 		<div>
@@ -21,6 +22,7 @@ What's your duel of the day?
 			<a href="">View Past Duels</a>
 		</div>
 	</div>
+
 	<div>		
 		<h4>Choose your category:</h4>
 		<form action="">
@@ -37,12 +39,13 @@ What's your duel of the day?
 		</form>
 		<a href="">View Categories</a>
 		<h4>Choose your options:</h4>
-	
 		<form action="">
 			<fieldset class="options">
-			
+			@foreach($category as $cat)
+				<label>{{ $cat->title}}<input type="checkbox"></label>
+			@endforeach
 			</fieldset>
-		<button>Start my duel!</button>
+			<button>Start my duel!</button>
 		</form>
 	</div>
 

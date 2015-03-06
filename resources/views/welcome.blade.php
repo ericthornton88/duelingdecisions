@@ -63,7 +63,7 @@ Your Decision is in the Ring!
 		</form>
 		<div>
 			Not a member?
-			<a class="btn-link"href="/registration">Register Here</a>
+			<a class="btn-link"href="auth/register">Register Here</a>
 		</div>
 	</div>
 @endsection
