@@ -21,8 +21,7 @@ What's your duel of the day?
 			<a href="">View Past Duels</a>
 		</div>
 	</div>
-	<div class="duel-setup">
-		
+	<div>		
 		<h4>Choose your category:</h4>
 		<form action="">
 			<select name="category">
