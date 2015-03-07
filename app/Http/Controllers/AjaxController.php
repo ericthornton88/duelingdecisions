@@ -8,9 +8,9 @@ class AjaxController extends Controller {
 
 
 	public function getChoice() {
-		$category = new CategoryModel();
-		$all_categories = $category->getAllCategoryChoice();		
-		return view('/profile', ['choice'=>$all_categories]);
+		$choice = new ChoiceModel();
+		$all_choice = $category->displayChoice();		
+		return view('/profile', ['choice'=>$all_choice]);
 	}
 
 }

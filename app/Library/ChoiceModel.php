@@ -50,13 +50,14 @@ class ChoiceModel {
 	}	
 	
 
-	public function displayChoice() {
+	public function displayChoice($id) {
 		$results = DB::select('
 		SELECT category_name, title, category_id 
 		FROM category
 		LEFT JOIN choice using (category_id) 
 		where category_id = :category_id
-		
-		');
+		', [':category_id'=>$id]);
+
+		return $results;
 	}
 }
