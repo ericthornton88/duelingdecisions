@@ -31,7 +31,7 @@ What's your duel of the day?
 			@foreach($category as $cat)
 				@if($cur_cat != $cat->category_name)
 				<?php $cur_cat = $cat->category_name; ?>
-					<option value="<?php $cat->category_id?>">{{$cat->category_name}}</option>
+					<option value="{{$cat->category_id}}">{{$cat->category_name}}</option>
 				@endif
 			@endforeach
 			</select>
@@ -41,9 +41,7 @@ What's your duel of the day?
 		<h4>Choose your options:</h4>
 		<form action="">
 			<fieldset class="options">
-			{{-- @foreach($category as $cat) --}}
-				{{-- <label>{{ $cat->title}}<input type="checkbox"></label> --}}
-			{{-- @endforeach --}}
+			
 			</fieldset>
 			<button>Start my duel!</button>
 		</form>

@@ -7,10 +7,10 @@ use DB;
 class AjaxController extends Controller {
 
 
-	public function getChoice() {
+	public function getChoice($id) {
 		$choice = new ChoiceModel();
-		$all_choice = $category->displayChoice();		
-		return view('/profile', ['choice'=>$all_choice]);
+		$all_choice = $choice->displayChoice($id);		
+		return $all_choice;
 	}
 
 }
