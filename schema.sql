@@ -7,20 +7,23 @@ USE dueling_decisions;
 
 CREATE TABLE user (
 user_id INT auto_increment PRIMARY KEY,
-username varchar(255) NOT NULL,
-email varchar(255) NOT NULL,
-password char(55) NOT NULL,
+username varchar(255),
+email varchar(255),
+password char(255),
 remember_token varchar(255),
-first_name varchar(255) NOT NULL,
-last_name varchar(255) NOT NULL, 
-created_at datetime NOT NULL,
-updated_at datetime NOT NULL 
+first_name varchar(255),
+last_name varchar(255), 
+created_at datetime,
+updated_at datetime 
 
 );
 
 
-INSERT INTO user (username, email, password, first_name, last_name, created_at, updated_at) VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'myrealpassword123', 'garrett', 'tacoronte', NOW());
-INSERT INTO user (username, email, password, first_name, last_name, created_at, updated_at) VALUES ('imaboss', 'bossman@gmail.com', 'lezdual123', 'boss', 'man', NOW());
+
+INSERT INTO user (username, email, password, first_name, last_name, created_at, updated_at)
+VALUES ('garretttaco', 'garretttacoronte@gmail.com', '', 'garrett', 'tacoronte', NOW(), NOW());
+INSERT INTO user (username, email, password, first_name, last_name, created_at, updated_at)
+VALUES ('imaboss', 'bossman@gmail.com', '', 'boss', 'man', NOW(), NOW());
 
 CREATE TABLE category (
 category_id INT auto_increment PRIMARY KEY,
