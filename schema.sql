@@ -69,22 +69,23 @@ user_id INT NOT NULL,
 category_id INT NOT NULL,
 datetime datetime NOT NULL,
 current_round INT NOT NULL,
-is_open INT NOT NULL
+is_open INT NOT NULL,
+winner_choice_id INT
 );
 
 
-INSERT INTO contest (user_id, category_id, datetime, current_round, is_open) VALUES (1, 2, NOW(), 6, 0);
-INSERT INTO contest (user_id, category_id, datetime, current_round, is_open) VALUES (2, 2, NOW(), 3, 1);
+INSERT INTO contest (user_id, category_id, datetime, current_round, is_open, winner_choice_id) VALUES (1, 2, NOW(), 6, 0, 1);
+INSERT INTO contest (user_id, category_id, datetime, current_round, is_open, winner_choice_id) VALUES (2, 2, NOW(), 3, 0, 1);
 
 
 CREATE TABLE contest_choice (
 contest_id INT NOT NULL,
-choice_id INT NOT NULL,
 round INT NOT NULL,
-is_selected INT NOT NULL,
-PRIMARY KEY (contest_id, choice_id)
+selected_choice_id INT NOT NULL,
+eliminated_choice_id INT NOT NULL,
+PRIMARY KEY (contest_id, round)
 );
 
-INSERT INTO contest_choice (contest_id, choice_id, round, is_selected) VALUES (1, 2, 1, 1);
-INSERT INTO contest_choice (contest_id, choice_id, round, is_selected) VALUES (1, 3, 2, 0);
+INSERT INTO contest_choice (contest_id, round, selected_choice_id, eliminated_choice_id) VALUES (1, 1, 1, 2);
+INSERT INTO contest_choice (contest_id, round, selected_choice_id, eliminated_choice_id) VALUES (1, 2, 2, 3);
 
