@@ -11,15 +11,15 @@ What's your duel of the day?
 		{{-- Ensure these links actually go to the appropriate pages. --}}
 		<div>
 			<h4>What categories do I have?</h4>
-			<a href="">View Categories</a>
+			<a href="category/all">View Categories</a>
 		</div>
 		<div>
 			<h4>What options do I have?</h4>
-			<a href="">View Options</a>
+			<a href="category/all">View Options</a>
 		</div>
 		<div>
 			<h4>View your dueling victories?</h4>
-			<a href="">View Past Duels</a>
+			<a href="/">View Past Duels</a>
 		</div>
 	</div>
 
@@ -35,7 +35,6 @@ What's your duel of the day?
 				@endif
 			@endforeach
 			</select>
-			<button>Choose this category</button>
 		</form>
 		<a href="">View Categories</a>
 		<h4>Choose your options:</h4>
