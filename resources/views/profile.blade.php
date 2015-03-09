@@ -25,7 +25,9 @@ What's your duel of the day?
 
 	<div>		
 		<h4>Choose your category:</h4>
-		<form action="">
+		<form action="/duel/{{$category[0]->category_id}}" method="POST">
+		<input type="hidden" name="_token" value="{{ csrf_token() }}">
+
 			<select name="category">
 			<?php $cur_cat = ''; ?>
 			@foreach($category as $cat)
@@ -35,12 +37,10 @@ What's your duel of the day?
 				@endif
 			@endforeach
 			</select>
-		</form>
-		<a href="">View Categories</a>
-		<h4>Choose your options:</h4>
-		<form action="">
+			<a href="">View Categories</a>
+			<h4>Choose your options:</h4>
 			<fieldset class="options">
-			
+			{{-- Add the option id to this fieldset. --}}
 			</fieldset>
 			<button>Start my duel!</button>
 		</form>

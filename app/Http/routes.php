@@ -16,6 +16,7 @@ Route::get('registration', 'RegistrationController@index');
 Route::get('registration/adduser', 'RegistrationController@addUser');
 Route::get('category/all', 'CategoryController@getCategories');
 Route::get('profile', 'CategoryController@getAllCategories');
+Route::get('info', function(){return view('info');});
 
 
 /*** 
@@ -28,8 +29,9 @@ Route::post('/choice/new', 'ChoiceController@addChoice');
 /*** 
 Duel Routes
 ***/
-Route::get('duel', '');
 
+// Route::get('duel', function(){return view("duel");});
+Route::post('/duel/{id}', "AjaxController@initDuel");
 
 /*** 
 Logging out Routes. 
