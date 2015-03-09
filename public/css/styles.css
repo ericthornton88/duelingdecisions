@@ -5,6 +5,21 @@ header {
 	margin-bottom: 25px;
 	background-color: orange;
 }
+
+header .btn-group {
+	position: absolute;
+	right: 10px;
+	margin-top: 10px;
+}
+
+header .hidden {
+	display: none;
+}
+
+header .btn-group .dropdown-toggle {
+	margin-left: 0;
+}
+
 .hero {
 	background-color: green;
 	text-align: center;
