@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dueling Decisions</title>
+	<link rel="shortcut icon" href="/img/logo2.png"/>
 	<link rel="stylesheet" href="<?php echo asset('css/normalize.css')?>" type="text/css">
 	<link rel="stylesheet" href="<?php echo asset('css/styles.css')?>" type="text/css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
