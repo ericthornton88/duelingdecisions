@@ -16,6 +16,7 @@ Route::get('registration', 'RegistrationController@index');
 Route::get('registration/adduser', 'RegistrationController@addUser');
 Route::get('category/all', 'CategoryController@getCategories');
 Route::get('profile', 'CategoryController@getAllCategories');
+Route::get('info', function(){return view('info');});
 
 
 /*** 

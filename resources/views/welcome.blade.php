@@ -7,12 +7,9 @@ Your Decision is in the Ring!
 @section('main_content')
 	<div>
 		<h3>Having doubts about registering?</h3>
-		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui voluptate
-		ducimus adipisci, expedita iste blanditiis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, dolores.
-		 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, possimus.
-		 similique obcaecati ipsa illum, maxime quia quas nisi officiis unde corporis voluptatem temporibus dolor sunt.
+		<div>Making decisions is hard! Sometimes we have so many options that it prevents us from making any decision at all. Dueling Decisions can help you make your choice easier! When you log in, you'll be able to create categories to duel with! Add your options and get ready to duel!
 		</div>
-		<a href="#">More...</a>
+		<a href="info">More...</a>
 	</div>
 	<div>
 		<h3>Login here:</h3>
