@@ -8,9 +8,11 @@ Want to see your decisions in the ring? Add a new choice.
 @section('main_content')
 	<div>
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-		<input type="hidden" name="category_id" value="1" required>
 		<input type="hidden" name="user_id" value="1" required>
-
+		<select name="category_id">
+			
+		</select>
+		<input type="hidden" name="category_id" value="1" required>
 		<label>Choice Name: <input type="text" name="title" required></label>
 		<label>Details: <input type="text" name="details"></label>
 		<label>Rating: Low <input type="range" name="rating" min="1" max="5"> High </label>
