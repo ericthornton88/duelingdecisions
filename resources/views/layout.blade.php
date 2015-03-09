@@ -45,8 +45,8 @@
 				Written by Thor, Taco, &amp Drag
 			</div>
 			<div>
-				<div><a href="">Home</a></div>
-				<div><a href="">Details</a></div>
+				<div><a href="/">Home</a></div>
+				<div><a href="info">Details</a></div>
 				<div><a href="">Login</a></div>
 			</div>
 		</footer>
