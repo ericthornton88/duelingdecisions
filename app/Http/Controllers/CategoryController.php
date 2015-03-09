@@ -20,9 +20,7 @@ class CategoryController extends Controller {
 		$category = new CategoryModel();
 		$all_categories = $category->getAllCategoryChoice();
 
-		return view('profile', ['category'=>$all_categories]);		
-
-
+		return view('profile', ['category'=>$all_categories]);x
 
 	}
 

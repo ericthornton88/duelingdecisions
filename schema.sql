@@ -59,7 +59,7 @@ rating INT NOT NULL,
 description varchar(255) NOT NULL
 );
 
-INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (1, 1, '5', 'Best fries!');
+INSERT INTO user_choice_feature (choice_id, is_positive, rating, description)VALUES (1, 1, '5', 'Best fries!');
 INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (2, 0, '1', 'Worst service');
 
 CREATE TABLE contest (
