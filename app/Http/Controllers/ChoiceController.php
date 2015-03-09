@@ -26,4 +26,5 @@ class ChoiceController extends Controller {
 
 	}
 
+	
 }

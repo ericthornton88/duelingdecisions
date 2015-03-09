@@ -30,8 +30,8 @@ $(function(){
 					console.log(response);
 					var fieldset = $('fieldset');
 					fieldset.html('');
-					response.forEach(function(choice, index){
-						fieldset.append('<label for="' + index + '">' + choice.title + '</label><input type="checkbox" name="' + index + '">');
+					response.forEach(function(choice){
+						fieldset.append('<label for="' + choice.choice_id + '">' + choice.title + '</label><input type="checkbox" name="' + choice.choice_id + '" value="' + choice.choice_id + '">');
 					});
 
 		            // var choices = $(".options").json2html(response); 

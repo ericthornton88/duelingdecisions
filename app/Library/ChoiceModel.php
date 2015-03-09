@@ -52,7 +52,7 @@ class ChoiceModel {
 
 	public function displayChoice($id) {
 		$results = DB::select('
-		SELECT category_name, title, category_id 
+		SELECT category_name, title, category_id, choice_id
 		FROM category
 		LEFT JOIN choice using (category_id) 
 		where category_id = :category_id
@@ -60,4 +60,24 @@ class ChoiceModel {
 
 		return $results;
 	}
+
+
+	public function duel($resultsArray) {
+		// ToDo: Loop through all the array items, to ensure they are all integers	to prevent SQL injection.
+		$implosion = implode(", ", $resultsArray);			
+		$sql = "SELECT *
+		FROM choice
+		Join user_choice_feature using (choice_id)
+		where choice_id in ($implosion)"; 
+
+		$sqlValues = DB::Select($sql);
+		print_r($sqlValues);
+
+		// return results (which is an array).
+
+	}
+
+
+
+
 }
