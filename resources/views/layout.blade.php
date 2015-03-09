@@ -30,10 +30,11 @@
 		</div>	
 	</header>
 	@show
-	
-	<main>
-		@yield('main_content')
-	</main>
+	<div class="main-container">
+		<main>
+			@yield('main_content')
+		</main>
+	</div>
 	
 {{-- 	<div class="aftermain"></div> --}}
 		@section('footer')
