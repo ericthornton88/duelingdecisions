@@ -15,7 +15,7 @@ $(function(){
 
 	$('header').on('click', '.btn-primary', function() {
 		console.log('here');
-	  	$(this).parents('.btn-group').find('.dropdown-menu').removeClass('dropdown-menu').addClass('expand-dropdown');
+	  	$(this).parents('.btn-group').find('.dropdown-menu').toggleClass('expand-dropdown');
 	});
 
 
@@ -46,4 +46,5 @@ $(function(){
 
 		});
 	});
+
 });

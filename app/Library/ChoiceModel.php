@@ -57,7 +57,6 @@ class ChoiceModel {
 		LEFT JOIN choice using (category_id) 
 		where category_id = :category_id
 		', [':category_id'=>$id]);
-
 		return $results;
 	}
 
@@ -71,9 +70,9 @@ class ChoiceModel {
 		where choice_id in ($implosion)"; 
 
 		$sqlValues = DB::Select($sql);
-		print_r($sqlValues);
 
 		// return results (which is an array).
+		return $sqlValues;
 
 	}
 
