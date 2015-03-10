@@ -13,6 +13,11 @@ $(function(){
 		$(this).parents('ul').toggleClass('expand');
 	});
 
+	$('header').on('click', '.btn-primary', function() {
+		console.log('here');
+	  	$(this).parents('.btn-group').find('.dropdown-menu').removeClass('dropdown-menu').addClass('expand-dropdown');
+	});
+
 
 	$(document).on('change', 'select', function(){
 		var cat_id = $('select[name=category]').val()
