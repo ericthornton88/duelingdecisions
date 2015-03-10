@@ -2,6 +2,7 @@
 
 use App\Library\CategoryModel;
 use App\Library\ChoiceModel;
+use Request;
 use DB;
 
 class CategoryController extends Controller {
@@ -20,6 +21,17 @@ class CategoryController extends Controller {
 		$category = new CategoryModel();
 		$all_categories = $category->getAllCategoryChoice();
 		return view('profile', ['category'=>$all_categories]);		
+
+	}
+
+	public function newCategory() {
+		$name = Request::input('category_name');
+		$category = new CategoryModel();
+		$category->newCategory($name);
+		$all_categories = $category->getAllCategoryChoice();		
+		// return view('/category/all', ['category'=>$all_categories]);
+
+		return redirect('category/all');
 
 	}
 

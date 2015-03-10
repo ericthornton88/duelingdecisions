@@ -24,6 +24,16 @@ class CategoryModel {
 			');
 		return $results;
 	}
+
+	public function newCategory($category_name) {
+		$results = DB::insert('
+			INSERT INTO category (category_name)
+			VALUES (:category_name)',
+			[':category_name' => $category_name]);
+	}
+
+
+
 }
 
 
