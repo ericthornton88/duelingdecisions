@@ -20,7 +20,7 @@
 	if (Auth::guest()) {
 		$welcome = 'Login';
 		$option_1 = 'Login';
-		$link_1 = '/';
+		$link_1 = '/auth/login';
 		$logo_1 = 'fa fa-sign-in';
 		$option_2 = 'Register';
 		$link_2 = 'auth/register';
@@ -57,11 +57,9 @@
 		</div>	
 	</header>
 	@show
-	<div class="main-container">
-		<main>
-			@yield('main_content')
-		</main>
-	</div>
+	<main>
+		@yield('main_content')
+	</main>
 	
 {{-- 	<div class="aftermain"></div> --}}
 		@section('footer')

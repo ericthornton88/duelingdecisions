@@ -33,7 +33,7 @@ Duel Routes
 ***/
 
 // Route::get('duel', function(){return view("duel");});
-Route::get('/duel', "AjaxController@initDuel");
+Route::post('/duel', "AjaxController@initDuel");
 
 /*** 
 Logging out Routes. 

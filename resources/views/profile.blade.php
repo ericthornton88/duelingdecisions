@@ -25,7 +25,7 @@ What's your duel of the day?
 
 	<div>		
 		<h4>Choose your category:</h4>
-		<form action="/duel" >
+		<form action="/duel" method='POST'>
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
 			<select name="category">
