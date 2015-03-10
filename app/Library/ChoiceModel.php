@@ -66,7 +66,7 @@ class ChoiceModel {
 		$implosion = implode(", ", $resultsArray);			
 		$sql = "SELECT *
 		FROM choice
-		Join user_choice_feature using (choice_id)
+		left Join user_choice_feature using (choice_id)
 		where choice_id in ($implosion)"; 
 
 		$sqlValues = DB::Select($sql);
