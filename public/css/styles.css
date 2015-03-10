@@ -12,28 +12,6 @@ header .btn-group {
 	margin-top: 10px;
 }
 
-.dropdown-menu {
-	display: none;
-}
-
-.expand-dropdown {
-	background-color: #3378A6;
-	border-radius: 5px;
-	margin-top: 7px;
-	box-shadow: 1px 1px 1px black;
-	padding: 10px;
-	padding-right: 0;
-}
-
-.expand-dropdown a {
-	text-decoration: none;
-	color: white;
-}
-
-.expand-dropdown li {
-	list-style-type: none;
-}
-
 /*---*/
 
 .hero {
@@ -241,6 +219,28 @@ JavaScript Classes
 
 .expand .options {
 	display: block;
+}
+
+.dropdown-menu {
+	display: none;
+}
+
+.expand-dropdown {
+	background-color: #3378A6;
+	border-radius: 5px;
+	margin-top: 7px;
+	box-shadow: 1px 1px 1px black;
+	padding: 10px;
+	padding-right: 0;
+}
+
+.expand-dropdown a {
+	text-decoration: none;
+	color: white;
+}
+
+.expand-dropdown li {
+	list-style-type: none;
 }
 
 
