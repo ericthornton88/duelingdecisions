@@ -71,9 +71,9 @@ class ChoiceModel {
 		where choice_id in ($implosion)"; 
 
 		$sqlValues = DB::Select($sql);
-		print_r($sqlValues);
 
 		// return results (which is an array).
+		return $sqlValues;
 
 	}
 

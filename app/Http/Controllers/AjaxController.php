@@ -15,15 +15,14 @@ class AjaxController extends Controller {
 	}
 
 	public function initDuel() {
-		print_r($_POST);
+		
 		$resultsArray = Request::Except("_token", "category");
 		$choice = new ChoiceModel();
 		$results = $choice->duel($resultsArray);
-		// ->withInput($allData);
-		// print_r($allData);
-		return view('/duel');
-		// ->withInput($allData);
-		// do something with results.
+		$json_results = json_encode($results);
+		echo $json_results;
+		return view('/duel', ['results'=>$json_results]);
+		
 	}
 
 }
