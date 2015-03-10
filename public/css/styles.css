@@ -226,6 +226,7 @@ JavaScript Classes
 }
 
 .expand-dropdown {
+	display: block;
 	background-color: #3378A6;
 	border-radius: 5px;
 	margin-top: 7px;
