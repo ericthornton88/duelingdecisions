@@ -12,13 +12,31 @@ header .btn-group {
 	margin-top: 10px;
 }
 
-header .hidden {
+.dropdown-menu {
 	display: none;
 }
 
-header .btn-group .dropdown-toggle {
-	margin-left: 0;
+.expand .dropdown-menu {
+	background-color: #3378A6;
+	border-radius: 5px;
+	margin-top: 7px;
+	box-shadow: 1px 1px 1px black;
+	padding: 10px;
+	padding-right: 0;
 }
+
+.expand .dropdown-menu a {
+	text-decoration: none;
+	color: white;
+}
+
+.expand .dropdown-menu li {
+	list-style-type: none;
+}
+
+/*header .btn-group .dropdown-toggle {
+	margin-left: 0;
+}*/
 
 .hero {
 	background-color: green;
@@ -219,7 +237,7 @@ JavaScript Classes
 ********************
 */
 .options {
-	display:none;
+	display: none;
 	background-color: #fff;
 }
 
