@@ -9,6 +9,8 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+
+
 /*** 
 New Registration Routes
 ***/

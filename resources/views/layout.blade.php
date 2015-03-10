@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Dueling Decisions</title>
+	<link rel="shortcut icon" href="/img/logo2.png"/>
 	<link rel="stylesheet" href="<?php echo asset('css/normalize.css')?>" type="text/css">
 	<link rel="stylesheet" href="<?php echo asset('css/styles.css')?>" type="text/css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -15,6 +16,18 @@
 	
 	@section('header')
 	<header>
+		<div class="btn-group open">
+		  <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i>Welcome User</a>
+		  {{-- <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+		    <span class="fa fa-caret-down"></span></a> --}}
+		  <ul class="dropdown-menu hidden">
+		    <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
+		    <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
+		    <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
+		    <li class="divider"></li>
+		    <li><a href="#"><i class="i"></i> Make admin</a></li>
+		  </ul>
+		</div>
 		<div class="hero">
 			<a href="/"><img src="/img/logo2.png" alt="Dueling Decisions"></a>
 			{{-- <nav>
@@ -44,8 +57,8 @@
 				Written by Thor, Taco, &amp Drag
 			</div>
 			<div>
-				<div><a href="">Home</a></div>
-				<div><a href="">Details</a></div>
+				<div><a href="/">Home</a></div>
+				<div><a href="info">Details</a></div>
 				<div><a href="">Login</a></div>
 			</div>
 		</footer>
