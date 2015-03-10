@@ -6,8 +6,9 @@
 
 @section('main_content')
 <script>
-c = <?php echo $results ?>;
-console.log(c);
+var c = <?php echo $results ?>;
+
+
 </script>
 <script src="../JavaScript/duel.js"></script>
 
@@ -19,8 +20,7 @@ console.log(c);
 		</ul>
 		<ul>Cons
 			<li>Con 1</li>
-			<li>Con 2</li>
-			<li>Con 3</li>
+			
 		</ul>
 	</div>
 	<div>
@@ -35,13 +35,10 @@ console.log(c);
 		<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>
 		<ul>Pros
 			<li>Pro 1</li>
-			<li>Pro 2</li>
-			<li>Pro 3</li>
+		
 		</ul>
 		<ul>Cons
-			<li></li>
 			<li>Con 2</li>
-			<li>Con 3</li>
 		</ul>
 	</div>
 @endsection
