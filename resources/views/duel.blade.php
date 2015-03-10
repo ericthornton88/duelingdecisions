@@ -9,6 +9,8 @@
 c = <?php echo $results ?>;
 console.log(c);
 </script>
+<script src="../JavaScript/duel.js"></script>
+
 	<div>
 		<h3 class="choice-one">Choice 1 </h3>
 		<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>

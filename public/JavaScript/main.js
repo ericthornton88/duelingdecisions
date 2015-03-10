@@ -47,8 +47,4 @@ $(function(){
 		});
 	});
 
-	function initDuel(){
-		console.log(c);
-	}
-	initDuel();
 });

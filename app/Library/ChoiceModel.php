@@ -57,7 +57,6 @@ class ChoiceModel {
 		LEFT JOIN choice using (category_id) 
 		where category_id = :category_id
 		', [':category_id'=>$id]);
-
 		return $results;
 	}
 
