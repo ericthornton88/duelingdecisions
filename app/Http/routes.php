@@ -31,8 +31,9 @@ Route::post('/choice/new', 'ChoiceController@addChoice');
 /*** 
 Duel Routes
 ***/
+
 // Route::get('duel', function(){return view("duel");});
-Route::post('/duel/{id}', "AjaxController@initDuel");
+Route::post('/duel', "AjaxController@initDuel");
 
 /*** 
 Logging out Routes. 
