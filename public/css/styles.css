@@ -16,7 +16,7 @@ header .btn-group {
 	display: none;
 }
 
-.expand .dropdown-menu {
+.expand-dropdown {
 	background-color: #3378A6;
 	border-radius: 5px;
 	margin-top: 7px;
@@ -25,18 +25,16 @@ header .btn-group {
 	padding-right: 0;
 }
 
-.expand .dropdown-menu a {
+.expand-dropdown a {
 	text-decoration: none;
 	color: white;
 }
 
-.expand .dropdown-menu li {
+.expand-dropdown li {
 	list-style-type: none;
 }
 
-/*header .btn-group .dropdown-toggle {
-	margin-left: 0;
-}*/
+/*---*/
 
 .hero {
 	background-color: green;
