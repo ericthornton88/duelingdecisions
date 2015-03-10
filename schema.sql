@@ -21,9 +21,9 @@ updated_at datetime
 
 
 INSERT INTO user (username, email, password, first_name, last_name, created_at, updated_at)
-VALUES ('garretttaco', 'garretttacoronte@gmail.com', '', 'garrett', 'tacoronte', NOW(), NOW());
+VALUES ('garretttaco', 'garretttacoronte@gmail.com', 'password', 'garrett', 'tacoronte', NOW(), NOW());
 INSERT INTO user (username, email, password, first_name, last_name, created_at, updated_at)
-VALUES ('imaboss', 'bossman@gmail.com', '', 'boss', 'man', NOW(), NOW());
+VALUES ('imaboss', 'bossman@gmail.com', 'password', 'boss', 'man', NOW(), NOW());
 
 CREATE TABLE category (
 category_id INT auto_increment PRIMARY KEY,
@@ -43,13 +43,13 @@ details varchar(255) NOT NULL,
 title varchar(255) NOT NULL
 );
 
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Mc\'Donalds', 'Best burgers on the planet');
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Burger King', 'Best burgers on the planet');
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('2', '1', 'Hawaii', 'Best burgers on the planet');
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('2', '1', 'Cozumel', 'Best burgers on the planet');
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('3', '1', 'Lazer Tag', 'Best burgers on the planet');
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('3', '1', 'Bowling', 'Best burgers on the planet');
-INSERT INTO choice (category_id, user_id, title, details) VALUES ('4', '1', 'MacBook', 'Best burgers on the planet');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Mc\'Donalds', 'McD Best burgers');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Burger King', 'BK Best burgers');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('2', '1', 'Hawaii', 'Hawaii Best Vacation');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('2', '1', 'Cozumel', 'Cozumel Best Vacation');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('3', '1', 'Lazer Tag', 'Lazer Tag Best Vacation');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('3', '1', 'Bowling', 'Bowling is the best');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('4', '1', 'MacBook', 'MacBook wins and is better than Garretts computer');
 
 
 CREATE TABLE user_choice_feature (
