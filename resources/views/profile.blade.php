@@ -25,15 +25,11 @@ What's your duel of the day?
 
 	<div>		
 		<h4>Choose your category:</h4>
-<<<<<<< HEAD
 
 		<form action="/duel" method='POST'>
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-=======
-		<form action="/duel" method='POST'>
-		<input type="hidden" name="_token" value="{{ csrf_token() }}">
->>>>>>> Eric
+
 			<select name="category">
 			<?php $cur_cat = ''; ?>
 			@foreach($category as $cat)
