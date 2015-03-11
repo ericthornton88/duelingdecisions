@@ -12,7 +12,8 @@ class ChoiceModel {
 		$results = DB::select('
 		SELECT * 
 		FROM choice
-		');		
+		where user_id = :user_id
+		', [':user_id' => \Auth::User()->user_id]);		
 		return $results;
 	}
 		
@@ -50,6 +51,7 @@ class ChoiceModel {
 	}	
 	
 
+	// Do we need this function? Where are we using it? 
 	public function displayChoice($id) {
 		$results = DB::select('
 		SELECT category_name, title, category_id, choice_id
