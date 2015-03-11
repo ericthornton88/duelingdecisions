@@ -29,10 +29,12 @@ Route::post('category/new', 'CategoryController@newCategory');
 /*** 
 Choice Routes
 ***/
+
 Route::get('/choice/new', "CategoryController@getCategoryList");
 Route::post('/choice/new', 'ChoiceController@addChoice');
 
 Route::get('/choice/update', function(){return view("choice/updateChoice");});
+
 
 /*** 
 Duel Routes
