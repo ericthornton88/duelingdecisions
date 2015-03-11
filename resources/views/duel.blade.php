@@ -13,15 +13,7 @@
 	<script src="../JavaScript/duel.js"></script>
 
 	<div class="first-child">
-		<h3 class="choice-one">Choice 1 </h3>
-		<p>Details: <span class="choice-one-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam.</span></p>
-		<ul>Pros
-			<li class="choice-one-description">Pro 1</li>
-		</ul>
-		<ul>Cons
-			<li>Con 1</li>
-			
-		</ul>
+		
 	</div>
 
 	<div class="middle-child select-choice">
@@ -33,16 +25,27 @@
 	</div>
 
 	<div class="last-child">
-		<h3 class="choice-two">Choice 1 </h3>
-		<p>Details: <span class="choice-two-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam.</span></p>
-		<ul>Pros
-			<li class="choice-two-description">Pro 1</li>
-		</ul>
-		<ul>Cons
-			<li>Con 1</li>
-			
-		</ul>
+		
 	</div>
+
+<script id="template-choice" type="text/x-handlebars-template">
+	<h3> @{{title}} </h3>
+	<p>Details: @{{details}}</p>
+	<ul>Pros
+		<li>@{{pro}}</li>
+	</ul>
+	<ul>Cons
+		<li>@{{con}}</li>
+		
+	</ul>
+
+</script>
+
+
+
+
+
+
 
 
 @endsection
