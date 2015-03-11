@@ -36,13 +36,14 @@
 		<h3 class="choice-two">Choice 2 </h3>
 		<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>
 		<ul>Pros
-			<li>Pro 1</li>
+			<li class="pro2">Pro 1</li>
 		
 		</ul>
 		<ul>Cons
-			<li class="con">Con 2</li>
+			<li>Con 2</li>
 		</ul>
 	</div>
+
 
 @endsection
 
