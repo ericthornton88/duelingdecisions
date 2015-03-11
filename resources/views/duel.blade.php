@@ -14,9 +14,9 @@
 
 	<div class="first-child">
 		<h3 class="choice-one">Choice 1 </h3>
-		<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>
+		<p>Details: <span class="choice-one-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam.</span></p>
 		<ul>Pros
-			<li class="pro">Pro 1	</li>
+			<li class="choice-one-description">Pro 1</li>
 		</ul>
 		<ul>Cons
 			<li>Con 1</li>
@@ -33,14 +33,14 @@
 	</div>
 
 	<div class="last-child">
-		<h3 class="choice-two">Choice 2 </h3>
-		<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>
+		<h3 class="choice-two">Choice 1 </h3>
+		<p>Details: <span class="choice-two-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam.</span></p>
 		<ul>Pros
-			<li class="pro2">Pro 1</li>
-		
+			<li class="choice-two-description">Pro 1</li>
 		</ul>
 		<ul>Cons
-			<li>Con 2</li>
+			<li>Con 1</li>
+			
 		</ul>
 	</div>
 
