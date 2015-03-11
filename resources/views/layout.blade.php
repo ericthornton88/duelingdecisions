@@ -49,7 +49,7 @@
 		  </ul>
 		</div>
 		<div class="hero">
-			<a href="/"><img src="/img/logo2.png" alt="Dueling Decisions"></a>
+			<a href="/"><img src="/img/logo2.png" alt="Dueling Decisions" class="logo"></a>
 			<h1>
 				@section('title')
 				@show
