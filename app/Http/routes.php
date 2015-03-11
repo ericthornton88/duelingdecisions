@@ -33,7 +33,7 @@ Choice Routes
 Route::get('/choice/new', 'CategoryController@getCategoryList');
 Route::post('/choice/new', 'ChoiceController@addChoice');
 
-Route::post('duel/complete', function(){return view("doneDuel");});
+Route::post('duel/complete', "AjaxController@endDuel");
 /*** 
 Duel Routes
 ***/
