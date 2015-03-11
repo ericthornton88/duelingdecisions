@@ -107,13 +107,24 @@ main > div {
 	/*position: relative;*/
 }
 
-main > div:first-child {
+main > .first-child {
 	float: left;
 	background-color: rgba(126, 194, 231, 0.2);
 	background-color: green;
 }
 
-main > div:last-child {
+main > .middle-child {
+	background-color: rgba(126, 194, 231, 0.2);
+	background-color: pink;
+}
+
+main > .select-choice {
+	width: 100px;
+	min-height: 100px;
+	margin-top: 11%;
+}
+
+main > .last-child {
 	float: right;
 	background-color: rgba(126, 194, 231, 0.2);
 	background-color: pink;

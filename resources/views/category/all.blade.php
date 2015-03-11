@@ -5,7 +5,7 @@ All Categories and Choices
 @endsection
 
 @section('main_content')
-	<div>
+	<div class="first-child">
 		<?php $cur_cat = ''; ?>
 		<div>
 		{{-- LOBATAMIZED OWL GOES HERE KRISTIN --}}
@@ -23,7 +23,7 @@ All Categories and Choices
 			</ul>
 		</div>
 	</div>
-	<div>
+	<div class="last-child">
 		<div><h2>Want to create a new category?</h2></div>
 		<form action="/category/new" method="POST">
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
