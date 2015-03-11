@@ -1,8 +1,10 @@
 var duelInit = function(){
-	$('.choice-one').text(c[0].title);
-	$('.pro').text(c[0].details);
-	$('.choice-two').text(c[1].title);
-	$('.pro2').text(c[1].details);
+	c.forEach(function(choice){
+		$('.choice-one').text(choice.title);
+		console.log(choice.title);
+		console.log(choice.details);
+		console.log(choice.description);
+	});
 };
 
 $(function(){
