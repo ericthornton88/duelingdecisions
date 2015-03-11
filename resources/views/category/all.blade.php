@@ -30,6 +30,8 @@ All Categories and Choices
 			<label>Category Name: <input type="text" name="category_name" required></label>		
 			<button>Create this category</button>
 		</form>
+		<div><h2>Want to create a choice?</h2></div>
+		<p>It's hard to have a duel with no choices in the category! <a href="/choice/new">Add a choice here.</a></p>
 	</div>
 		
 @endsection

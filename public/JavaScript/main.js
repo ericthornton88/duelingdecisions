@@ -19,7 +19,8 @@ $(function(){
 	});
 
 
-	$(document).on('change', 'select', function(){
+
+	$(document).on('change', '.startDuel', function(){
 		var cat_id = $('select[name=category]').val()
 		$('.options').parents('form').addClass('expand');
 
