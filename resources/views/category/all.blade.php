@@ -27,7 +27,7 @@ All Categories and Choices
 		<div><h2>Want to create a new category?</h2></div>
 		<form action="/category/new" method="POST">
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
-			<label>Category Name: <input type="text" name="category_name"></label>		
+			<label>Category Name: <input type="text" name="category_name" required></label>		
 			<button>Create this category</button>
 		</form>
 	</div>

@@ -11,8 +11,6 @@ class CategoryController extends Controller {
 	public function getCategories() {
 		$category = new CategoryModel();
 		$all_categories = $category->getAllCategoryChoice();		
-
-
 		return view('/category/all', ['category'=>$all_categories]);
 	}
 
@@ -34,5 +32,12 @@ class CategoryController extends Controller {
 		return redirect('category/all');
 
 	}
+
+	// 	public function getCategoryList() {
+	// 	$category = new CategoryModel();
+	// 	$all_categories = $category->getAllCategories();		
+	// 	print_r($all_categories);
+	// 	return view('choice/new', ['categories'=>$all_categories]);
+	// }
 
 }
