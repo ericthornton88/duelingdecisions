@@ -9,14 +9,23 @@ class ChoiceModel {
 	
 
 	public function getChoices() {
+	// 	$results = DB::select('
+	// 	SELECT * 
+	// 	FROM choice
+	// 	where user_id = :user_id
+	// 	', [':user_id' => \Auth::User()->user_id]);		
+	// 	return $results;
+	// }
+		
 		$results = DB::select('
 		SELECT * 
 		FROM choice
 		where user_id = :user_id
-		', [':user_id' => \Auth::User()->user_id]);		
+		');		
 		return $results;
 	}
-		
+
+
 	public function newChoice($user_id, $category_id) {
 		$user_id = Request::input('user_id');
 		$categry_id = Request::input('categry_id');
@@ -61,6 +70,8 @@ class ChoiceModel {
 		', [':category_id'=>$id]);
 		return $results;
 	}
+
+
 
 
 	public function duel($resultsArray) {
