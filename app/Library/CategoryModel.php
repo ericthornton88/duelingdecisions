@@ -7,24 +7,39 @@ use DB;
 class CategoryModel {
 	
 	public function getAllCategoryChoice() {
+	// 	$results = DB::select('
+	// 	SELECT category_name, title, category_id 
+	// 	FROM category
+	// 	LEFT JOIN choice using (category_id) 
+	// 	where user_id = :user_id
+	// 	order by category_name
+	// 	', [':user_id' => \Auth::User()->user_id]);
+		
+	// 	return $results;
+	// }
 		$results = DB::select('
 		SELECT category_name, title, category_id 
 		FROM category
 		LEFT JOIN choice using (category_id) 
-		where user_id = :user_id
 		order by category_name
-		', [':user_id' => \Auth::User()->user_id]);
+		');
 		
 		return $results;
 	}
 
 	public function getAllCategories() {
+	// 	$results = DB::select('
+	// 		SELECT * 
+	// 		from category 
+	// 		LEFT JOIN choice USING (category_id)
+	// 		where user_id = :user_id
+	// 		', [':user_id' => \Auth::User()->user_id]);
+	// 	return $results;
+	// }
 		$results = DB::select('
 			SELECT * 
 			from category 
-			LEFT JOIN choice USING (category_id)
-			where user_id = :user_id
-			', [':user_id' => \Auth::User()->user_id]);
+			');
 		return $results;
 	}
 
