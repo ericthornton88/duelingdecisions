@@ -33,13 +33,13 @@ Route::get('/choice/new', function(){return view("choice/newChoice");});
 // Route::get('/choice/new', "CategoryController@getCategoryList");
 Route::post('/choice/new', 'ChoiceController@addChoice');
 
-
+Route::get('duel/complete', function(){return view("doneDuel");});
 /*** 
 Duel Routes
 ***/
 
-// Route::get('duel', function(){return view("duel");});
 Route::post('/duel', "AjaxController@initDuel");
+
 
 /*** 
 Logging out Routes. 
