@@ -26,8 +26,8 @@
 
 	<div class="middle-child select-choice">
 		<form action="">
-			<label>Choice 1<input type="radio" value="1"></label>	
-			<label>Choice 2<input type="radio" value="1"></label>	
+			<label>Choice 1<input type="radio" value="1" name="choice"></label>	
+			<label>Choice 2<input type="radio" value="2" name="choice"></label>	
 			<button>Submit</button>
 		</form>
 	</div>
