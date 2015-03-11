@@ -29,15 +29,15 @@ Route::post('category/new', 'CategoryController@newCategory');
 /*** 
 Choice Routes
 ***/
-// Route::get('/choice/new', function(){return view("choice/newChoice");});
 Route::get('/choice/new', "CategoryController@getCategoryList");
 Route::post('/choice/new', 'ChoiceController@addChoice');
 
-Route::get('duel/complete', function(){return view("doneDuel");});
+Route::get('/choice/update', function(){return view("choice/updateChoice");});
+
 /*** 
 Duel Routes
 ***/
-
+Route::get('duel/complete', function(){return view("doneDuel");});
 Route::post('/duel', "AjaxController@initDuel");
 
 
