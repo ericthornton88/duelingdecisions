@@ -29,7 +29,7 @@
 		$user = \Auth::user()->first_name;
 		$welcome = 'Welcome ' . $user;
 		$option_1 = 'New Duel';
-		$link_1 = 'profile';
+		$link_1 = '/profile';
 		$logo_1 = 'fa fa-star';
 		$option_2 = 'Logout';
 		$link_2 = '/auth/logout';

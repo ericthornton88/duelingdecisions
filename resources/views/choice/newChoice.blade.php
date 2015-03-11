@@ -14,7 +14,6 @@ Want to see your decisions in the ring? Add a new choice.
 					@foreach($categories as $cat)				
 						<option value="{{$cat->category_id}}" required>{{$cat->category_name}}</option>
 					@endforeach
-					{{-- Insert options with values of category_id --}}
 				</select>
 			</div>	
 			<div>	
