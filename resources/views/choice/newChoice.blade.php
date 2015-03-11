@@ -6,7 +6,7 @@ Want to see your decisions in the ring? Add a new choice.
 
 <form action="" method="POST">
 @section('main_content')
-	<div>
+	<div class="first_child">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<input type="hidden" name="user_id" value="1" required>
 		<select name="category_id">
@@ -17,7 +17,7 @@ Want to see your decisions in the ring? Add a new choice.
 		<label>Details: <input type="text" name="details"></label>
 		<label>Rating: Low <input type="range" name="rating" min="1" max="5"> High </label>
 	</div>
-	<div>
+	<div class="last_child">
 		<fieldset>
 			<p>Add pros or cons.</p>
 			<input type="text" name="description">

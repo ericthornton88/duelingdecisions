@@ -1,14 +1,15 @@
 var duelInit = function(){
-	console.log(c);
+	$('.choice-one').text(c[0].title);
+
 };
 
 $(function(){
 
+duelInit();
 
 
 
 
 
-duelInit()
 
 });

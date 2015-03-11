@@ -6,13 +6,13 @@ Your Decision is in the Ring!
 @endsection
 
 @section('main_content')
-	<div>
+	<div class="first-child">
 		<h3>Having doubts about registering?</h3>
 		<div>Making decisions is hard! Sometimes we have so many options that it prevents us from making any decision at all. Dueling Decisions can help you make your choice easier! When you log in, you'll be able to create categories to duel with! Add your options and get ready to duel!
 		</div>
 		<a href="info">More...</a>
 	</div>
-	<div>
+	<div class="last-child">
 		<h3>Login here:</h3>
 		@if (count($errors) > 0)
 			<div class="alert alert-danger">

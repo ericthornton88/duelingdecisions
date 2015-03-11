@@ -2,7 +2,6 @@
 Header Section
 ******/
 header {
-	margin-bottom: 25px;
 	background-color: orange;
 }
 
@@ -12,11 +11,17 @@ header .btn-group {
 	margin-top: 10px;
 }
 
+header h1 {
+	margin-bottom: 0;
+}
+
 /*---*/
 
 .hero {
 	background-color: green;
 	text-align: center;
+	width: 960px;
+	margin: 0 auto;
 }
 
 img {
@@ -78,54 +83,61 @@ h3 {
 	font-weight: bold;
 }
 
-div {
+/*div {
 	margin-bottom: 5px;
-}
-
-.hero {
-	width: 960px;
-	margin: 0 auto;
-}
+}*/
 
 main {
+	width: 960px;
 	overflow:hidden;
+	margin: 0 auto;
 	background-color: blue;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
-
-.main-container-holder {
-	margin-top: 100px;
-	margin-bottom: 0;
-	background-color: orange;
-	min-height: 30px;
-	overflow: hidden;
-}
-
-.main-container {
+main > div {
 	text-align: center;
 	border-radius: 15px;
-	width: 35%;
+	width: 300px;
 	padding: 30px;
-	min-height: 250px;
+	min-height: 300px;
 	display: inline-block;
-	background-color: rgba(126, 194, 231, 0.2);
+	/*position: relative;*/
 }
 
-.main-container {
+main > .first-child {
 	float: left;
-	margin-left: 75px;
-	background-color: rgba(126, 194, 231, 0.3);
+	background-color: rgba(126, 194, 231, 0.2);
+	background-color: green;
+}
+
+main > .middle-child {
+	background-color: rgba(126, 194, 231, 0.2);
 	background-color: pink;
 }
 
-.login {
+main > .select-choice {
+	width: 100px;
+	min-height: 100px;
+	margin-top: 11%;
+}
+
+main > .last-child {
+	float: right;
+	background-color: rgba(126, 194, 231, 0.2);
+	background-color: pink;
+}
+
+/*.login {
 	float: right;
 	margin-right: 60px;
 	background-color: rgba(176, 226, 251, 0.2);
 	padding-bottom: 20px;
 	padding-top: 20px;
 	background-color: pink;
-}
+}*/
 
 .col-md-6 > input {
 	background-color: transparent;

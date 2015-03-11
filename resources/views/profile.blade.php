@@ -7,7 +7,7 @@ What's your duel of the day?
 
 @section('main_content')
 
-	<div>
+	<div class="first-child">
 		{{-- Ensure these links actually go to the appropriate pages. --}}
 		<div>
 			<h4>What categories do I have?</h4>
@@ -23,11 +23,12 @@ What's your duel of the day?
 		</div>
 	</div>
 
-	<div>		
+	<div class="last-child">		
 		<h4>Choose your category:</h4>
 
 		<form action="/duel" method='POST'>
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
+
 			<select name="category">
 			<?php $cur_cat = ''; ?>
 			@foreach($category as $cat)

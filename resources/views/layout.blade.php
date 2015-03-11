@@ -23,7 +23,7 @@
 		$link_1 = '/auth/login';
 		$logo_1 = 'fa fa-sign-in';
 		$option_2 = 'Register';
-		$link_2 = 'auth/register';
+		$link_2 = '/auth/register';
 		$logo_2 = 'fa fa-plus-square';
 	} else {
 		$user = \Auth::user()->first_name;
@@ -32,7 +32,7 @@
 		$link_1 = 'profile';
 		$logo_1 = 'fa fa-star';
 		$option_2 = 'Logout';
-		$link_2 = 'auth/logout';
+		$link_2 = '/auth/logout';
 		$logo_2 = 'fa fa-sign-out';
 		// $option_3 = 'New';
 	}
@@ -70,8 +70,8 @@
 			</div>
 			<div>
 				<div><a href="/">Home</a></div>
-				<div><a href="info">Details</a></div>
-				<div><a href="">Login</a></div>
+				<div><a href="/info">Details</a></div>
+				<div><a href="/auth/login">Login</a></div>
 			</div>
 		</footer>
 	@show
