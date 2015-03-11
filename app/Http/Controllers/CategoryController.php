@@ -33,11 +33,11 @@ class CategoryController extends Controller {
 
 	}
 
-	// 	public function getCategoryList() {
-	// 	$category = new CategoryModel();
-	// 	$all_categories = $category->getAllCategories();		
-	// 	print_r($all_categories);
-	// 	return view('choice/new', ['categories'=>$all_categories]);
-	// }
+		public function getCategoryList() {
+		$category = new CategoryModel();
+		$all_categories = $category->getAllCategories();		
+		print_r($all_categories);
+		return view('choice/newChoice', ['categories'=>$all_categories]);
+	}
 
 }

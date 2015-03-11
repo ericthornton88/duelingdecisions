@@ -29,7 +29,7 @@ What's your duel of the day?
 		<form action="/duel" method='POST'>
 			<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-			<select name="category">
+			<select name="category" class="startDuel">
 			<?php $cur_cat = ''; ?>
 			@foreach($category as $cat)
 				@if($cur_cat != $cat->category_name)

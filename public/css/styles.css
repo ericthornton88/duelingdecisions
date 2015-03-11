@@ -16,6 +16,7 @@ header h1 {
 }
 
 .logo {
+
 	-webkit-animation-name: toss;	
 	-webkit-animation-duration: 7s;
 	-webkit-animation-iteration-count: infinite;
@@ -118,13 +119,13 @@ main > div {
 	/*position: relative;*/
 }
 
-main > .first-child {
+main > .first-child, .first_child {
 	float: left;
 	background-color: rgba(126, 194, 231, 0.2);
 	background-color: green;
 }
 
-main > .middle-child {
+main > .middle-child, {
 	background-color: rgba(126, 194, 231, 0.2);
 	background-color: pink;
 }
@@ -135,7 +136,7 @@ main > .select-choice {
 	margin-top: 11%;
 }
 
-main > .last-child {
+main > .last-child, .last_child {
 	float: right;
 	background-color: rgba(126, 194, 231, 0.2);
 	background-color: pink;
