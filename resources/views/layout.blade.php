@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<script src="/bower_components/handlebars/handlebars.js"></script>
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="../JavaScript/main.js"></script>
 </head>
