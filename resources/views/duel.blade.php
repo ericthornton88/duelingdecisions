@@ -33,7 +33,7 @@
 	</div>
 
 	<div class="last-child">
-		<h3>Choice 2 </h3>
+		<h3 class="choice-two">Choice 2 </h3>
 		<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>
 		<ul>Pros
 			<li>Pro 1</li>
