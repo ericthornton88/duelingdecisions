@@ -196,7 +196,6 @@ footer div {
 }
 
 footer > div:nth-child(2) {
-	border: 1px solid black;
 	float: right;
 	
 }
