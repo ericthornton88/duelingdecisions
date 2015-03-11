@@ -15,6 +15,21 @@ header h1 {
 	margin-bottom: 0;
 }
 
+.logo {
+
+	background: url('assets/bower-logo.png') no-repeat;
+	background-size: contain;
+
+	-webkit-animation-name: toss;	
+	-webkit-animation-duration: 7s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes toss {
+	0% { transform: rotate(-10deg); }
+	50% { transform: rotate(20deg); }
+	100% { transform: rotate(-10deg); }		
+}
 /*---*/
 
 .hero {
