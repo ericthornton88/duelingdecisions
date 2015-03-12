@@ -8,7 +8,7 @@ All Categories and Choices
 	<div class="first-child">
 		<?php $cur_cat = ''; ?>
 		<div>
-		{{-- LOBATAMIZED OWL GOES HERE KRISTIN --}}
+			<h3>Categories</h3>
 			<ul class="category">
 			@foreach($category as $cat)
 				@if($cur_cat == $cat->category_name)
