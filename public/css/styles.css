@@ -378,4 +378,6 @@ main > .select-choice {
 }
 
 
-
+li {
+	width: 125px;
+}
