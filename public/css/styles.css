@@ -1,9 +1,6 @@
 /****** 
 Header Section
 ******/
-header {
-	background-color: orange;
-}
 
 header .btn-group {
 	position: absolute;
@@ -30,7 +27,7 @@ header h1 {
 /*---*/
 
 .hero {
-	background-color: green;
+	/*background-color: green;*/
 	text-align: center;
 	width: 960px;
 	margin: 0 auto;
@@ -41,24 +38,7 @@ img {
 	height: 75px;
 }
 
-nav {
-	text-align: center;
-	font-size: 30px;
-	color: #FEE469;
-	text-shadow: 1px 1px 1px #15A2ED;
-	background-color: green;
-}
 
-nav a {
-	display: inline-block;
-	text-decoration: none;
-	padding: 10px;
-	font-size: 30px;
-	color: white;
-	text-shadow: 1px 1px 1px #15A2ED;
-	font-weight: bold;
-	background-color: red;
-}
 
 /****** 
 Main Body Section
@@ -70,6 +50,10 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
 	font-family: PT Sans;
+	/*text-shadow: 1px 1px 1px rgb(223, 153, 68);*/
+
+/*	font-family: Lobster;
+*/
 }
 
 /*.2 {
@@ -77,33 +61,26 @@ body {
 	display: inline-block;
 }*/
 
-.aftermain {
-	min-height: 410px;
-	background-color: green;
-}
 
 
 main > h1 {
 	text-align: center;
-	background-color: blue;
+	/*background-color: blue;*/
 }
 
-h3 {
+h2, h3 {
 	font-size: 20px;
 	color: white;
 	text-shadow: .5px .5px .5px #336699;
 	font-weight: bold;
 }
 
-/*div {
-	margin-bottom: 5px;
-}*/
+
 
 main {
 	width: 960px;
 	overflow:hidden;
 	margin: 0 auto;
-	background-color: blue;
 	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -122,12 +99,10 @@ main > div {
 main > .first-child, .first_child {
 	float: left;
 	background-color: rgba(126, 194, 231, 0.2);
-	background-color: green;
 }
 
 main > .middle-child, {
 	background-color: rgba(126, 194, 231, 0.2);
-	background-color: pink;
 }
 
 main > .select-choice {
@@ -138,18 +113,10 @@ main > .select-choice {
 
 main > .last-child, .last_child {
 	float: right;
-	background-color: rgba(126, 194, 231, 0.2);
-	background-color: pink;
+	background-color: rgba(176, 226, 251, 0.2);
 }
 
-/*.login {
-	float: right;
-	margin-right: 60px;
-	background-color: rgba(176, 226, 251, 0.2);
-	padding-bottom: 20px;
-	padding-top: 20px;
-	background-color: pink;
-}*/
+
 
 .col-md-6 > input {
 	background-color: transparent;
@@ -160,10 +127,10 @@ main > .last-child, .last_child {
 	width: 250px;
 }
 
-.login h3 {
+/*.login h3 {
 	margin-top: 0;
 	margin-bottom: 10px;
-}
+}*/
 
 .btn-primary {
 	background-color: #3378A6;
@@ -171,16 +138,33 @@ main > .last-child, .last_child {
 	border-radius: 5px;
 	color: white;
 	padding: 5px 10px;
+
 }
+
+select, button {
+	background-color: rgba(51, 120, 166, 0.15);
+	border: 1px solid rgba(51, 120, 166, 0.18);
+	border-radius: 5px;
+	color: white;
+	padding: 5px 10px;
+}
+
+ option {
+background-color: rgba(51, 120, 166, 0.44); 
+}
+/*.login h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}*/
 
 .btn-link {
 	color: white;
 }
 
-.brief-info {
+/*.brief-info {
 	background-color: rgba(126, 194, 231, 0.2);
 }
-
+*/
 
 /****** 
 Footer Section
@@ -190,7 +174,6 @@ footer {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: orange;
 	overflow: hidden;
 	min-height: 10px;
 }
@@ -202,7 +185,6 @@ footer div {
 	border-radius: 5px;;
 	display: inline-block;
 	padding: 10px;
-	/*position: absolute;*/
 	background-color: rgba(223, 153, 68, .5);
 	border-radius: 5px;
 }
@@ -228,7 +210,8 @@ JavaScript Classes
 */
 .options {
 	display: none;
-	background-color: #fff;
+/*	background-color: #fff;*/
+	border: none;
 }
 
 .expand .options {
