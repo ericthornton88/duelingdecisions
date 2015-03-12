@@ -9,18 +9,18 @@ All Categories and Choices
 		<?php $cur_cat = ''; ?>
 		<div>
 			<h3>Categories</h3>
-			<ul class="category">
-			@foreach($category as $cat)
-				@if($cur_cat == $cat->category_name)
-					<div class="options">{{$cat->title}}</div>
-				@else 
-					</ul>
-					<?php $cur_cat = $cat->category_name;?>
-					
-					<ul class="category"> <li>{{$cat->category_name}} <div class="options">{{$cat->title}}</div></li>
-				@endif
-			@endforeach
-			</ul>
+			{{-- <ul class="category"> --}}
+				@foreach($category as $cat)
+					@if($cur_cat == $cat->category_name)
+						<li class="options">{{$cat->title}} <span class="edit"><i class="fa fa-pencil"></i></span> | <i class="fa fa-trash-o"></i></li>
+					@else 
+						</ul>
+						<?php $cur_cat = $cat->category_name;?>
+
+						<ul class="category"><li>{{$cat->category_name}} <div class="options">{{$cat->title}}</div></li>
+					@endif
+				@endforeach
+			{{-- </ul> --}}
 		</div>
 	</div>
 	<div class="last-child">

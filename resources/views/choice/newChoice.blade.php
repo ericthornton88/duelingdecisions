@@ -11,8 +11,14 @@ Want to see your decisions in the ring? Add a new choice.
 			<input type="hidden" name="user_id" value="{{\Auth::User()->user_id}}" required>
 			<div>
 				<select name="category_id">
-					@foreach($categories as $cat)				
-						<option value="{{$cat->category_id}}" required>{{$cat->category_name}}</option>
+				<?php $cur_cat = ''; ?>
+					@foreach($categories as $cat)
+						@if($cur_cat == $cat->category_name)
+
+						@else				
+							<?php $cur_cat = $cat->category_name;?>
+							<option value="{{$cat->category_id}}" required>{{$cat->category_name}}</option>
+						@endif
 					@endforeach
 				</select>
 			</div>	
@@ -24,6 +30,11 @@ Want to see your decisions in the ring? Add a new choice.
 			</div>
 			<div>
 				<label>Rating: Low <input type="range" name="rating" min="1" max="5"> High </label>	
+			</div>
+			<div class="current-choices">
+				@foreach($categories as $cat)
+
+				@endforeach
 			</div>
 		</div>
 		<div class="last_child">

@@ -53,6 +53,7 @@
 							</div>
 						</div>
 					</form>
+					<p>Not a member? <a href="/auth/register">Register aqui</a></p>
 				</div>
 			</div>
 		</div>
