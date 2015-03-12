@@ -50,22 +50,6 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
 	font-family: PT Sans;
-	/*text-shadow: 1px 1px 1px rgb(223, 153, 68);*/
-
-/*	font-family: Lobster;
-*/
-}
-
-/*.2 {
-	position: absolute;
-	display: inline-block;
-}*/
-
-
-
-main > h1 {
-	text-align: center;
-	/*background-color: blue;*/
 }
 
 h2, h3 {
@@ -74,8 +58,6 @@ h2, h3 {
 	text-shadow: .5px .5px .5px #336699;
 	font-weight: bold;
 }
-
-
 
 main {
 	width: 960px;
@@ -111,8 +93,6 @@ main > .last-child, .last_child {
 	background-color: rgba(176, 226, 251, 0.2);
 }
 
-
-
 .col-md-6 > input {
 	background-color: transparent;
 	border: 2px solid white;
@@ -122,18 +102,12 @@ main > .last-child, .last_child {
 	width: 250px;
 }
 
-/*.login h3 {
-	margin-top: 0;
-	margin-bottom: 10px;
-}*/
-
 .btn-primary {
 	background-color: #3378A6;
 	border: 1px solid #3378A6;
 	border-radius: 5px;
 	color: white;
 	padding: 5px 10px;
-
 }
 
 select, button {
@@ -144,22 +118,14 @@ select, button {
 	padding: 5px 10px;
 }
 
- option {
-background-color: rgba(51, 120, 166, 0.44); 
+option {
+	background-color: rgba(51, 120, 166, 0.44); 
 }
-/*.login h3 {
-	margin-top: 0;
-	margin-bottom: 10px;
-}*/
 
 .btn-link {
 	color: white;
 }
 
-/*.brief-info {
-	background-color: rgba(126, 194, 231, 0.2);
-}
-*/
 
 /****** 
 Footer Section
@@ -186,7 +152,6 @@ footer div {
 
 footer > div:nth-child(2) {
 	float: right;
-	
 }
 
 footer a {
@@ -205,7 +170,6 @@ JavaScript Classes
 */
 .options {
 	display: none;
-/*	background-color: #fff;*/
 	border: none;
 }
 
@@ -255,7 +219,6 @@ Category/all.blade.php CSS
 	left: 50%;
 	width: 150px;
 	margin-left: -75px;
-
 }
 
 .category {
@@ -277,17 +240,14 @@ PROFILE PAGE
 	margin-left: -400px;
 }
 
-
 .main-profile::after {
 	clear: both;
 	content: '';
 	display: block;
-
 }
 
 .left-profile {
 	display: inline-block;
-
 	background-color: red;
 }
 
