@@ -26,6 +26,9 @@
 		$option_2 = 'Register';
 		$link_2 = '/auth/register';
 		$logo_2 = 'fa fa-plus-square';
+		$option_3 = '';
+		$link_3 = '';
+		$logo_3 = '';
 	} else {
 		$user = \Auth::user()->first_name;
 		$welcome = 'Welcome ' . $user;
@@ -35,7 +38,9 @@
 		$option_2 = 'Logout';
 		$link_2 = '/auth/logout';
 		$logo_2 = 'fa fa-sign-out';
-		// $option_3 = 'New';
+		$option_3 = 'Settings';
+		$link_3 = '/edit';
+		$logo_3 = 'fa fa-cog';
 	}
 	
 	
@@ -45,8 +50,8 @@
 		  <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i>{{$welcome}}</a>
 		  <ul class="dropdown-menu">
 		    <li><a href="{{$link_1}}"><i class="{{$logo_1}} fa-fw"></i>{{$option_1}}</a></li>
+		    <li><a href="{{$link_3}}"><i class="{{$logo_3}} fa-fw"></i>{{$option_3}}</a></li>
 		    <li><a href="{{$link_2}}"><i class="{{$logo_2}} fa-fw"></i>{{$option_2}}</a></li>
-		    {{-- <li><a href="#"><i class="fa fa-ban fa-fw"></i>{{$option_3}}</a></li> --}}
 		  </ul>
 		</div>
 		<div class="hero">
