@@ -38,8 +38,15 @@
 <script id="template-decision" type="text/x-handlebars-template">
 	<form action="/duel/complete" method="POST">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-		<label>Choice 1<input type="radio" value="@{{id_1}}" name="choice"></label>	
-		<label>Choice 2<input type="radio" value="@{{id_2}}" name="choice"></label>
+		<div class="container">
+		    <div class="switch">
+		      <input type="radio" class="switch-input" name="view" value="@{{id_1}}" id="week" checked>
+		      <label for="week" class="switch-label switch-label-off">@{{name_1}}</label>
+		      <input type="radio" class="switch-input" name="view" value="@{{id_2}}" id="month">
+		      <label for="month" class="switch-label switch-label-on">@{{name_2}}</label>
+		      <span class="switch-selection"></span>
+		    </div>
+		</div>
 		<button>Submit</button>
 	</form>
 </script>

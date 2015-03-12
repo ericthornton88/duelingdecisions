@@ -19,7 +19,9 @@ var renderSubmit = function(duel1, duel2) {
 
 	var output = template({
 		id_1: duel1.choice_id,
-		id_2: duel2.choice_id
+		id_2: duel2.choice_id,
+		name_1: duel1.title,
+		name_2: duel2.title
 	});
 	
 	$('.middle-child').append(output);
