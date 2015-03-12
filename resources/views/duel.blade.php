@@ -17,12 +17,7 @@
 	</div>
 
 	<div class="middle-child select-choice">
-		<form action="/duel/complete" method="POST">
-		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-			<label>Choice 1<input type="radio" value="1" name="choice"></label>	
-			<label>Choice 2<input type="radio" value="2" name="choice"></label>	
-			<button>Submit</button>
-		</form>
+		
 	</div>
 
 	<div class="last-child">
@@ -37,9 +32,16 @@
 	</ul>
 	<ul>Cons
 		<li>@{{con}}</li>
-		
 	</ul>
+</script>
 
+<script id="template-decision" type="text/x-handlebars-template">
+	<form action="/duel/complete" method="POST">
+		<input type="hidden" name="_token" value="{{ csrf_token() }}">
+		<label>Choice 1<input type="radio" value="@{{id_1}}" name="choice"></label>	
+		<label>Choice 2<input type="radio" value="@{{id_2}}" name="choice"></label>
+		<button>Submit</button>
+	</form>
 </script>
 
 

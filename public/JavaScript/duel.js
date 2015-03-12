@@ -1,15 +1,3 @@
-// var duelInit = function(){
-	
-// 	$('.choice-one').text(c[0].title);
-// 	$('.choice-one-details').text(c[0].details);
-// 	$('.choice-one-description').text(c[0].description);
-
-// 	$('.choice-two').text(c[1].title);
-// 	$('.choice-two-details').text(c[1].details);
-// 	$('.choice-two-description').text(c[1].description);
-	
-// };
-
 var renderChoice = function(duel) {
 	var source = $('#template-choice').html();
 	var template = Handlebars.compile(source);
@@ -21,8 +9,20 @@ var renderChoice = function(duel) {
 		con: duel.description
 	});
 	
-
 	return output;
+
+}
+
+var renderSubmit = function(duel1, duel2) {
+	var source = $('#template-decision').html();
+	var template = Handlebars.compile(source);
+
+	var output = template({
+		id_1: duel1.choice_id,
+		id_2: duel2.choice_id
+	});
+	
+	$('.middle-child').append(output);
 
 }
 
@@ -32,7 +32,7 @@ var get2Choices = function(c) {
 			choice2: c[1]};
 }
 
-duel = get2Choices(c);
+
 
 var renderLeft = function(duel) {
 	$('.first-child').append(renderChoice(duel));
@@ -43,12 +43,32 @@ var renderRight = function(duel) {
 	$('.last-child').append(renderChoice(duel));
 }
 
+var renderFinal = function(duelFinal) {
+	$('.middle-child').append(renderChoice(duelFinal));
+}
+
+var getFinal = function(choice) {
+	return {choice1: choice[0]};
+}
+
+
+
 
 $(function(){
 
 
-renderLeft(duel.choice1);
-renderRight(duel.choice2);
+if (window.location.pathname == '/duel') {
+	duel = get2Choices(c);
+	renderLeft(duel.choice1);
+	renderRight(duel.choice2);
+
+	renderSubmit(duel.choice1 , duel.choice2);
+} else if (window.location.pathname == '/duel/complete') {
+
+	duelFinal = getFinal(choice);
+	renderFinal(duelFinal.choice1);
+
+}
 
 
 

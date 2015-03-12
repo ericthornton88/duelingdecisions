@@ -33,9 +33,13 @@ Choice Routes
 Route::get('/choice/new', "CategoryController@getCategoryList");
 Route::post('/choice/new', 'ChoiceController@addChoice');
 
+<<<<<<< HEAD
 Route::get('/choice/update', function(){return view("choice/updateChoice");});
 
 
+=======
+Route::post('duel/complete', "AjaxController@endDuel");
+>>>>>>> master
 /*** 
 Duel Routes
 ***/

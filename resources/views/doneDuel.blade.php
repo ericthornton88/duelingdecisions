@@ -5,15 +5,25 @@ Your decision has survived the ring!
 @endsection
 
 @section('main_content')
+	<script>
+	var choice = <?php echo $results ?>;
+
+
+	</script>
+	<script src="../JavaScript/duel.js"></script>
 	<div class="middle-child">
-		<h3 class="choice-one">Choice 1 </h3>
-		<p>Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, deleniti. Eaque dolores, optio. Illo id ad, exercitationem, consequuntur vitae dolore? Ratione quia debitis officiis ut? Eaque fugiat veritatis enim totam. </p>
+		
+	</div>
+
+	<script id="template-choice" type="text/x-handlebars-template">
+		<h3> @{{title}} </h3>
+		<p>Details: @{{details}}</p>
 		<ul>Pros
-			<li></li>
+			<li>@{{pro}}</li>
 		</ul>
 		<ul>Cons
-			<li>Con 1</li>
+			<li>@{{con}}</li>
 			
 		</ul>
-	</div>
+	</script>
 @endsection
