@@ -9,7 +9,7 @@ class CategoryModel {
 	// This one is giving an error.
 	public function getAllCategoryChoice() {
 		$results = DB::select('
-		SELECT category_name, title, category_id 
+		SELECT category_name, title, category_id, choice_id 
 		FROM category
 		LEFT JOIN choice using (category_id) 
 		where user_id = :user_id

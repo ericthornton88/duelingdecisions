@@ -26,5 +26,12 @@ class ChoiceController extends Controller {
 
 	}
 
+	public function deleteChoice($choice_id) {
+
+		$choice = new ChoiceModel();
+		$choice->deleteChoice($choice_id);
+		return redirect("/category/all");
+	}
+
 	
 }

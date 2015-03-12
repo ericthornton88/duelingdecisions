@@ -32,6 +32,7 @@ Choice Routes
 
 Route::get('/choice/new', "CategoryController@getCategoryList");
 Route::post('/choice/new', 'ChoiceController@addChoice');
+Route::get('/choice/{choice_id}/delete', 'ChoiceController@deleteChoice');
 
 
 

@@ -236,6 +236,16 @@ Category/all.blade.php CSS
 	text-align: left;
 }
 
+.first-child .edit {
+	margin: 0 7px;
+	color: black;
+}
+
+.first-child .delete {
+	margin: 0 7px;
+	color: black;
+}
+
 /*
 ****************
 PROFILE PAGE
