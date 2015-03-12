@@ -50,7 +50,9 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
 	font-family: PT Sans;
-	/*text-shadow: 1px 1px 1px rgb(223, 153, 68);*/
+	text-shadow: .6px .6px .6px rgba(255, 251, 251, 1);
+	
+
 
 /*	font-family: Lobster;
 */
@@ -73,6 +75,7 @@ h2, h3 {
 	color: white;
 	text-shadow: .5px .5px .5px #336699;
 	font-weight: bold;
+	text-shadow: 1.5px 1.5px 1.5px rgba(51, 120, 166, 1.00);
 }
 
 
@@ -146,7 +149,7 @@ select, button {
 }
 
  option {
-background-color: rgba(51, 120, 166, 0.44); 
+background-color: rgba(24, 136, 210, 0.44);; 
 }
 /*.login h3 {
 	margin-top: 0;
@@ -206,7 +209,6 @@ JavaScript Classes
 */
 .options {
 	display: none;
-/*	background-color: #fff;*/
 	border: none;
 }
 
