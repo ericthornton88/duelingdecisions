@@ -64,6 +64,7 @@
 	
 {{-- 	<div class="aftermain"></div> --}}
 		@section('footer')
+		<div class="space"></div>
 		<footer>
 			<div>
 				&copy 2015: 
