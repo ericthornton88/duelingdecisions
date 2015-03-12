@@ -23,6 +23,7 @@ What's your duel of the day?
 		</div>
 	</div>
 
+
 	<div class="last-child">		
 		<h4>Choose your category:</h4>
 
