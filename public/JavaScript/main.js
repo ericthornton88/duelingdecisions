@@ -31,7 +31,7 @@ $(function(){
 		        //to use Ajax to retrieve the choices pertaining to that specific category
 		        url: "/choice/" + cat_id,             
 		          //expect html to be returned                
-		        success: function(response){ 
+		        success: function(response){
 		        	var choices = {'tag':'input','html':'${title}'};
 					console.log(response);
 					var fieldset = $('fieldset');

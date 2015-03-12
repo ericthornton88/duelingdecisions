@@ -9,19 +9,13 @@ class ChoiceModel {
 	
 
 	public function getChoices() {
-	// 	$results = DB::select('
-	// 	SELECT * 
-	// 	FROM choice
-	// 	where user_id = :user_id
-	// 	', [':user_id' => \Auth::User()->user_id]);		
-	// 	return $results;
-	// }
-		
 		$results = DB::select('
 		SELECT * 
 		FROM choice
-		where user_id = :user_id
-		');		
+		where user_id = :user_id 
+		or user_id = :public; 
+		', [':user_id' => \Auth::User()->user_id,
+		  ':public' => 1]);		
 		return $results;
 	}
 
@@ -59,19 +53,17 @@ class ChoiceModel {
 		return redirect('/');
 	}	
 	
-
-	// Do we need this function? Where are we using it? 
 	public function displayChoice($id) {
 		$results = DB::select('
 		SELECT category_name, title, category_id, choice_id
 		FROM category
 		LEFT JOIN choice using (category_id) 
-		where category_id = :category_id
-		', [':category_id'=>$id]);
+		WHERE category_id = :category_id
+		AND (user_id = :user_id OR user_id = :public);
+		', [':category_id'=>$id, ':user_id' => \Auth::User()->user_id,
+		  ':public' => 1]);
 		return $results;
 	}
-
-
 
 
 	public function duel($resultsArray) {
@@ -83,8 +75,6 @@ class ChoiceModel {
 		where choice_id in ($implosion)"; 
 
 		$sqlValues = DB::Select($sql);
-
-		// return results (which is an array).
 		return $sqlValues;
 
 	}
