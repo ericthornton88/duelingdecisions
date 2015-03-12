@@ -304,7 +304,7 @@ PROFILE PAGE
 
 main > .select-choice {
 	padding: 0;
-	width: 150px;
+	width: 200px;
 	min-height: 100px;
 	margin-top: 15%;
 	background-color: false;
@@ -317,17 +317,22 @@ main > .select-choice {
 }
 
 .select-choice button {
-	background-color: #3378A6;
+	/*background-color: #3378A6;
 	border: 1px solid #3378A6;
 	border-radius: 5px;
-	color: white;
+	color: white;*/
+	font-size: 20px;
+	text-shadow: .5px .5px .5px #336699;
+	font-weight: bold;
+	background-color: rgb(51, 120, 166);
+	border: 1px solid rgba(51, 120, 166, 0.18);
 	margin-top: 10px;
 }
 
 .switch {
   position: relative;
   height: 50px;
-  width: 150px;
+  width: 200px;
   /*margin: 20px auto;*/
   background: rgba(0, 0, 0, 0.25);
   border-radius: 3px;
@@ -339,9 +344,9 @@ main > .select-choice {
   position: relative;
   z-index: 2;
   float: left;
-  width: 72px;
+  width: 98px;
   line-height: 50px;
-  font-size: 16px;
+  font-size: 17px;
   color: white;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
@@ -378,7 +383,7 @@ main > .select-choice {
   transition-property: color, text-shadow;
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 75px;
+  left: 100px;
   /* Note: left: 50%; doesn't transition in WebKit */
 }
 
@@ -388,7 +393,7 @@ main > .select-choice {
   top: 2px;
   left: 2px;
   display: block;
-  width: 72px;
+  width: 98px;
   height: 48px;
   border-radius: 3px;
   background-color: #3378A6;
