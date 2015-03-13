@@ -49,7 +49,7 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
 	font-family: PT Sans;
-	text-shadow: .6px .6px .6px rgba(255, 251, 251, 1);
+	/*text-shadow: .6px .6px .6px rgba(255, 251, 251, 1);*/
 }
 
 h2, h3 {
