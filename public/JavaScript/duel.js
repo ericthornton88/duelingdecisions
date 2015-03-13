@@ -84,7 +84,13 @@ $(function(){
 
 		if(array.length == 0 && typeof roundWinner == "object") {
 			$('.select-choice').on('submit', "form", function (e){
-				window.location.replace("/duel/complete");
+				$('.first-child').remove();
+				$('.last-child').remove();
+				$('.middle-child').empty();
+
+				renderFinal(roundWinner);
+				$('.middle-child').removeClass('select-choice').addClass('duel-container');
+
 			}); 
 
 		} else { 	// If more than 0 in the array, 
