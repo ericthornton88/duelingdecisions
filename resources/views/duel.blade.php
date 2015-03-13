@@ -39,10 +39,10 @@
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<div class="container">
 		    <div class="switch">
-		      <input type="radio" class="switch-input" name="choice" value="@{{id_1}}" id="week" checked>
-		      <label for="week" class="switch-label switch-label-off">@{{name_1}}</label>
-		      <input type="radio" class="switch-input" name="choice" value="@{{id_2}}" id="month">
-		      <label for="month" class="switch-label switch-label-on">@{{name_2}}</label>
+		      <input type="radio" class="switch-input" name="choice" value="@{{id_1}}" id="choice1" checked>
+		      <label for="choice1" class="switch-label switch-label-off">@{{name_1}}</label>
+		      <input type="radio" class="switch-input" name="choice" value="@{{id_2}}" id="choice2">
+		      <label for="choice2" class="switch-label switch-label-on">@{{name_2}}</label>
 		      <span class="switch-selection"></span>
 		    </div>
 		</div>

@@ -76,7 +76,7 @@ $(function(){
 		e.preventDefault();
 		roundWinner = "";
 
-   		if (document.getElementById("week").checked) {
+   		if (document.getElementById("choice1").checked) {
 			roundWinner = first;
 		} else {
 			roundWinner = second;
@@ -84,7 +84,7 @@ $(function(){
 
 		if(array.length == 0 && typeof roundWinner == "object") {
 			console.log("this will be a redirect to winner page.");
-			window.location.replace("/duel/complete");
+			window.location.replace("/duel/complete").withInput(roundWinner);
 		} else { 	// If more than 0 in the array, 
 			array.push(roundWinner);
 			duelSetup();

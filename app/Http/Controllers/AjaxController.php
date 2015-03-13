@@ -26,9 +26,9 @@ class AjaxController extends Controller {
 	}
 
 	public function endDuel() {
-		$resultsArray = Request::input("roundWinner");
+		// $resultsArray = Request::input("roundWinner");
 		print_r($resultsArray);
-		// $resultsArray = Request::Except("_token");
+		$resultsArray = Request::Except("_token");
 		$choice = new ChoiceModel();
 		$results = $choice->duel($resultsArray);
 		$json_results = json_encode($results);
