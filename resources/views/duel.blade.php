@@ -15,7 +15,7 @@
 		
 	</div>
 
-	<div class="middle-child select-choice duel-container">
+	<div class="middle-child select-choice">
 		
 	</div>
 

@@ -12,7 +12,7 @@ Your decision has survived the ring!
 
 	</script>
 	<script src="../JavaScript/duel.js"></script>
-	<div class="middle-child">
+	<div class="middle-child duel-container">
 		
 	</div>
 	
