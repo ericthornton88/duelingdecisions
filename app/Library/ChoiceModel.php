@@ -78,9 +78,20 @@ class ChoiceModel {
 		$sql = "SELECT *
 		FROM choice
 		left Join user_choice_feature using (choice_id)
-		where choice_id in ($implosion)"; 
+		where choice_id in ($implosion)";
 
 		$sqlValues = DB::Select($sql);
+
+		// $current_choice = 0;
+		// foreach ($sqlValues as $row) {
+		// 	if ($current_choice == $row['choice_id']) {
+		// 		$current_choice .= 
+		// 	} else {
+		// 		$current_choice = $row['choice_id'];
+
+		// 	}
+
+		// }
 		return $sqlValues;
 
 	}

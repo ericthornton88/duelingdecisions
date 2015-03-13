@@ -25,14 +25,10 @@
 
 <script id="template-choice" type="text/x-handlebars-template">
 	<h3> @{{title}} </h3>
-	<p>Details: @{{details}}</p>
-	Pros
+	<p><b><u>Details:</u></b> @{{details}}</p>
+	<b></u>Pros/Cons</u></b>
 	<ul>
 		<li>@{{pro}}</li>
-	</ul>
-	Cons
-	<ul>
-		<li>@{{con}}</li>
 	</ul>
 </script>
 

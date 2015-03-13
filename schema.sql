@@ -45,6 +45,12 @@ title varchar(255) NOT NULL
 
 INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'McDonalds', 'Biggest hamburger joint in the world');
 INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Burger King', 'A smaller burger joint than McD');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Chipotle', 'Mexican American Food');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Taco Bell', 'Mexican (???) Fast Food');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Chick Fil A', 'Cool chicken restaurant');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Raising Canes', 'Chicken fast food known for their sauce');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Cafe Rio', 'Mexican American. Famous for sweet pork');
+INSERT INTO choice (category_id, user_id, title, details) VALUES ('1', '1', 'Panda Express', 'Fast-food Chinese');
 INSERT INTO choice (category_id, user_id, title, details) VALUES ('2', '1', 'Hawaii', 'An island in the Pacific Ocean');
 INSERT INTO choice (category_id, user_id, title, details) VALUES ('2', '1', 'Cozumel', 'A resort city in Mexico');
 INSERT INTO choice (category_id, user_id, title, details) VALUES ('3', '1', 'Lazer Tag', 'A fun game to shoot others with lasers');
@@ -62,7 +68,12 @@ description varchar(255) NOT NULL
 
 INSERT INTO user_choice_feature (choice_id, is_positive, rating, description)VALUES (1, 1, '4', 'Best fries!');
 INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (2, 0, '1', 'Worst service');
-INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (4, 0, '5', 'Better than a mac');
+INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (3, 1, '5', 'Really good');
+INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (4, 1, '5', 'Cheapest value menu');
+INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (5, 1, '5', 'Really cheap');
+INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (6, 1, '5', 'The best sauce');
+INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (7, 1, '5', 'Amazing sweet pork burrito');
+INSERT INTO user_choice_feature (choice_id, is_positive, rating, description) VALUES (8, 1, '5', 'Orange chicken is awesome');
 
 CREATE TABLE contest (
 contest_id INT auto_increment PRIMARY KEY,
