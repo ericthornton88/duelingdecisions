@@ -50,7 +50,7 @@ Route::get('duel/complete', "AjaxController@completeDuel");
 	// endDuel");
 
 
-// Route::post('duel/complete', function(){return view("doneDuel");});
+Route::post('duel/complete', function(){return view("doneDuel");});
 // Route::get('duel/complete', function(){return view("doneDuel");});
 Route::post('/duel', "AjaxController@initDuel");
 

@@ -45,7 +45,12 @@ class AjaxController extends Controller {
 		// $results = $choice->duel($resultsArray);
 		// $json_results = json_encode($results);
 		// echo $json_results;
-		echo ("made it here via a get!");
+		if (isset($resultsArray)) {
+			echo ("this is the resutls: " . $resultsArray . ":end");
+			
+		} else {
+			echo ("made it here via a get!");
+		}
 
 		return view("/doneDuel", ['results'=>$resultsArray]);
 	}

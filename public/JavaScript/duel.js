@@ -73,29 +73,65 @@ var duelSetup = function (){
 
 $(function(){
 	roundWinner = "";
-	$(".select-choice").on("submit", "form", function(e){
-		e.preventDefault();
 
-   		if (document.getElementById("choice1").checked) {
-			roundWinner = first;
-		} else {
-			roundWinner = second;
-		}
+	if (array.legnth != 0) {
+		$(".select-choice").on("submit", "form", function(e){
+			e.preventDefault();
 
-		if(array.length == 0 && typeof roundWinner == "object") {
-			$('.select-choice').on('submit', "form", function (e){
-				window.location.replace("/duel/complete");
-			}); 
+	   		if (document.getElementById("choice1").checked) {
+				roundWinner = first;
+			} else {
+				roundWinner = second;
+			}
 
-		} else { 	// If more than 0 in the array, 
-			array.push(roundWinner);
-			duelSetup();
-		}
-	});
+			if(array.length == 0 && typeof roundWinner == "object") {
+				$('.select-choice').on('submit', "form", function (e){
+					window.location.replace("/duel/complete");
+				}); 
 
-	if (window.location.pathname == '/duel') {
-		duelSetup();
-	}
+			} else { 	// If more than 0 in the array, 
+				array.push(roundWinner);
+				duelSetup();
+			}
+		});
+	} 
+
+
+	// if (window.location.pathname == '/duel') {
+	// 	duelSetup();
+
+	// 	if (array.legnth != 0) {
+	// 		$(".select-choice").on("submit", "form", function(e){
+	// 			e.preventDefault();
+
+	// 	   		if (document.getElementById("choice1").checked) {
+	// 				roundWinner = first;
+	// 			} else {
+	// 				roundWinner = second;
+	// 			}
+				
+	// 			array.push(roundWinner);
+	// 			duelSetup();
+	// 		});
+
+	// 		// if(array.length == 0 && typeof roundWinner == "object") {
+	// 		// 	$('.select-choice').on('submit', "form", function (e){
+	// 		// 		window.location.replace("/duel/complete");
+	// 		// 	}); 
+
+	// 		// } else { 	// If more than 0 in the array, 
+	// 		// 	array.push(roundWinner);
+	// 		// 	duelSetup();
+	// 		// }
+	// 		// });
+	// 	} else {
+	// 		if(typeof roundWinner == "object") {
+	// 			$('.select-choice').on('submit', "form", function (e){
+	// 				window.location.replace("/duel/complete");
+	// 			}); 
+	// 		} 
+	// 	});
+	// }
 
 	if (window.location.pathname == '/duel/complete') {
 		console.log('we made it here.');

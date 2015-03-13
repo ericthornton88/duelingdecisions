@@ -35,7 +35,7 @@
 </script>
 
 <script id="template-decision" type="text/x-handlebars-template">
-	<form action="" method="POST">
+	<form action="/duel/Complete" method="POST">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		<div class="container">
 		    <div class="switch">
