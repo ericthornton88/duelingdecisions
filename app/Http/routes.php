@@ -18,7 +18,11 @@ Route::get('registration', 'RegistrationController@index');
 Route::get('registration/adduser', 'RegistrationController@addUser');
 Route::get('profile', 'CategoryController@getAllCategories');
 Route::get('info', function(){return view('info');});
-Route::get('/edit', function(){return view('updateUser');});
+
+/***
+Update User
+***/
+Route::get('/edit', 'UserController@currentUser');
 Route::post('/edit', 'UserController@updateUser');
 
 /*** 

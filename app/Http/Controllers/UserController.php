@@ -6,15 +6,23 @@ use DB;
 
 class UserController extends Controller {
 
-
-
-	public function updateUser($username, $email, $password, $first_name, $last_name) {
-		$update = Request::all();
+	public function currentUser() {
 		$user = new UserModel();
-		$update_user = $user->updateUserInfo($username, $email, $password, $first_name, $last_name);
-		print_r($update);
+		$current_user = $user->retrieveUser();
+		print_r($current_user);
+		return view('updateUser', ['current'=>$current_user[0]]);
+	}
 
-		return view('profile');
+	public function updateUser() {
+		$first_name = Request::input('first_name');
+		$last_name = Request::input('last_name');
+		$email = Request::input('email');
+
+		$user = new UserModel();
+		$update_user = $user->updateUserInfo($first_name, $last_name, $email);
+		
+
+		return redirect('/profile');
 	}
 
 
