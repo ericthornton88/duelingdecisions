@@ -6,7 +6,8 @@ Your decision has survived the ring!
 
 @section('main_content')
 	<script>
-	// var choice = <?php echo $results; ?>; 
+	var choice = {{ $results }}
+
 
 	</script>
 	<script src="../JavaScript/duel.js"></script>

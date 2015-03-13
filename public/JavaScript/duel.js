@@ -72,9 +72,9 @@ var duelSetup = function (){
 
 
 $(function(){
+	roundWinner = "";
 	$(".select-choice").on("submit", "form", function(e){
 		e.preventDefault();
-		roundWinner = "";
 
    		if (document.getElementById("choice1").checked) {
 			roundWinner = first;
@@ -83,8 +83,10 @@ $(function(){
 		}
 
 		if(array.length == 0 && typeof roundWinner == "object") {
-			console.log("this will be a redirect to winner page.");
-			window.location.replace("/duel/complete").withInput(roundWinner);
+			$('.select-choice').on('submit', "form", function (e){
+				window.location.replace("/duel/complete");
+			}); 
+
 		} else { 	// If more than 0 in the array, 
 			array.push(roundWinner);
 			duelSetup();
@@ -93,6 +95,12 @@ $(function(){
 
 	if (window.location.pathname == '/duel') {
 		duelSetup();
+	}
+
+	if (window.location.pathname == '/duel/complete') {
+		console.log('we made it here.');
+		console.log(roundWinner);
+		renderFinal(roundWinner);
 	}
 
 });

@@ -41,7 +41,16 @@ Route::get('/choice/{choice_id}/delete', 'ChoiceController@deleteChoice');
 /*** 
 Duel Routes
 ***/
-Route::post('duel/complete', "AjaxController@endDuel");
+// Route::post('duel/complete', "AjaxController@endDuel");
+Route::get('duel/complete', "AjaxController@completeDuel");
+
+
+
+
+	// endDuel");
+
+
+// Route::post('duel/complete', function(){return view("doneDuel");});
 // Route::get('duel/complete', function(){return view("doneDuel");});
 Route::post('/duel', "AjaxController@initDuel");
 
