@@ -21,10 +21,12 @@ Your decision has survived the ring!
 		<?php print_r($results); ?>
 		<h3> @{{title}} </h3>
 		<p>Details: @{{details}}</p>
-		<ul>Pros
+		Pros
+		<ul>
 			<li>@{{pro}}</li>
 		</ul>
-		<ul>Cons
+		Cons
+		<ul>
 			<li>@{{con}}</li>
 		</ul>
 		<a href="/">Return to profile</a>
