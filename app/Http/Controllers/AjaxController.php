@@ -26,6 +26,8 @@ class AjaxController extends Controller {
 	}
 
 	public function endDuel() {
+		// $resultsArray = Request::input("roundWinner");
+		// print_r($resultsArray);
 		$resultsArray = Request::Except("_token");
 		$choice = new ChoiceModel();
 		$results = $choice->duel($resultsArray);
@@ -35,4 +37,16 @@ class AjaxController extends Controller {
 		return view("/doneDuel", ['results'=>$json_results]);
 	}
 
+	public function completeDuel() {
+		$resultsArray = Request::input("roundWinner");
+		print_r($resultsArray);
+		// $resultsArray = Request::Except("_token");
+		// $choice = new ChoiceModel();
+		// $results = $choice->duel($resultsArray);
+		// $json_results = json_encode($results);
+		// echo $json_results;
+		echo ("made it here via a get!");
+
+		return view("/doneDuel", ['results'=>$resultsArray]);
+	}
 }

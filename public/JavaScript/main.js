@@ -45,9 +45,7 @@ $(function(){
 						fieldset.append('<label for="' + choice.choice_id + '">' + choice.title + '</label><input type="checkbox" name="' + choice.choice_id + '" value="' + choice.choice_id + '" checked>');
 					});
 
-		            // var choices = $(".options").json2html(response); 
-		            // console.log(choices);
-		            // alert(response);
+
 		        }
 
 		});
