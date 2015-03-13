@@ -66,10 +66,9 @@ class ChoiceModel {
 	}
 
 	public function deleteChoice($id) {
-		$results = DB::delete('
+		DB::delete("
 		DELETE FROM choice where choice_id = $id
-		');
-		return $results;
+		");
 	}
 
 

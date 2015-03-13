@@ -6,7 +6,8 @@ Your decision has survived the ring!
 
 @section('main_content')
 	<script>
-	var choice = {{ $results }}
+	// var choice = {{ $results }}
+	<?php echo $results; ?>
 
 
 	</script>
@@ -17,6 +18,7 @@ Your decision has survived the ring!
 	
 
 	<script id="template-choice" type="text/x-handlebars-template">
+		<?php print_r($results); ?>
 		<h3> @{{title}} </h3>
 		<p>Details: @{{details}}</p>
 		<ul>Pros

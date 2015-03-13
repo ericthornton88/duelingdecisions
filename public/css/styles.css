@@ -49,7 +49,7 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
 	font-family: PT Sans;
-	text-shadow: .6px .6px .6px rgba(255, 251, 251, 1);
+	/*text-shadow: .6px .6px .6px rgba(255, 251, 251, 1);*/
 }
 
 h2, h3 {
@@ -100,6 +100,14 @@ main > .last-child, .last_child {
 	background-color: rgba(176, 226, 251, 0.2);
 }
 
+.duel-container {
+	text-align: left;
+}
+
+.duel-container > h3 {
+	text-align: center;
+}
+
 .col-md-6 > input {
 	background-color: transparent;
 	border: 2px solid white;
@@ -115,6 +123,7 @@ main > .last-child, .last_child {
 	border-radius: 5px;
 	color: white;
 	padding: 5px 10px;
+	margin-top: 10px;
 }
 
 select, button {
