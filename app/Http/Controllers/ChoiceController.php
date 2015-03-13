@@ -30,6 +30,7 @@ class ChoiceController extends Controller {
 
 		$choice = new ChoiceModel();
 		$choice->deleteChoice($choice_id);
+		echo 'deleted model';
 		return redirect("/category/all");
 	}
 

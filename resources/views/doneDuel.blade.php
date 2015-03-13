@@ -6,7 +6,8 @@ Your decision has survived the ring!
 
 @section('main_content')
 	<script>
-	var choice = {{ $results }}
+	// var choice = {{ $results }}
+	<?php echo $results; ?>
 
 
 	</script>

@@ -13,13 +13,13 @@ All Categories and Choices
 			{{-- <ul class="category"> --}}
 				@foreach($category as $cat)
 					@if($cur_cat == $cat->category_name)
-						<li class="options">{{$cat->title}} <a class="edit" href="/choice/{{$cat->choice_id}}/delete"><i class="fa fa-pencil"></i></a> | <a class="delete" href=""><i class="fa fa-trash-o"></i></a></li>
+						<li class="options">{{$cat->title}} <a class="edit" href=""><i class="fa fa-pencil"></i></a> | <a class="delete" href="/choice/{{$cat->choice_id}}/delete"><i class="fa fa-trash-o"></i></a></li>
 					@else 
 						</ul>
 						<?php $cur_cat = $cat->category_name;?>
 
 						<ul class="category">
-							<li>{{$cat->category_name}} <div class="options">{{$cat->title}}<a class="edit" href="" value="{{$cat->title}}"><i class="fa fa-pencil"></i></a> | <a class="delete" href=""><i class="fa fa-trash-o"></i></a></div></li>
+							<li>{{$cat->category_name}} <div class="options">{{$cat->title}}<a class="edit" href="" value="{{$cat->title}}"><i class="fa fa-pencil"></i></a> | <a class="delete" href="/choice/{{$cat->choice_id}}/delete"><i class="fa fa-trash-o"></i></a></div></li>
 					@endif
 				@endforeach
 			{{-- </ul> --}}

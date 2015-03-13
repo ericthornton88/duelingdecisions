@@ -11,25 +11,27 @@
 	</script>
 	<script src="../JavaScript/duel.js"></script>
 
-	<div class="first-child">
+	<div class="first-child duel-container">
 		
 	</div>
 
-	<div class="middle-child select-choice">
+	<div class="middle-child select-choice duel-container">
 		
 	</div>
 
-	<div class="last-child">
+	<div class="last-child duel-container">
 		
 	</div>
 
 <script id="template-choice" type="text/x-handlebars-template">
 	<h3> @{{title}} </h3>
 	<p>Details: @{{details}}</p>
-	<ul>Pros
+	Pros
+	<ul>
 		<li>@{{pro}}</li>
 	</ul>
-	<ul>Cons
+	Cons
+	<ul>
 		<li>@{{con}}</li>
 	</ul>
 </script>
