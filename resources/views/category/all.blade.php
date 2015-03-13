@@ -7,20 +7,22 @@ All Categories and Choices
 @section('main_content')
 	<div class="first-child">
 		<?php $cur_cat = ''; ?>
+
 		<div>
 			<h3>Categories</h3>
-			<ul class="category">
-			@foreach($category as $cat)
-				@if($cur_cat == $cat->category_name)
-					<div class="options">{{$cat->title}}</div>
-				@else 
-					</ul>
-					<?php $cur_cat = $cat->category_name;?>
-					
-					<ul class="category"> <li>{{$cat->category_name}} <div class="options">{{$cat->title}}</div></li>
-				@endif
-			@endforeach
-			</ul>
+			{{-- <ul class="category"> --}}
+				@foreach($category as $cat)
+					@if($cur_cat == $cat->category_name)
+						<li class="options">{{$cat->title}} <a class="edit" href="/choice/{{$cat->choice_id}}/delete"><i class="fa fa-pencil"></i></a> | <a class="delete" href=""><i class="fa fa-trash-o"></i></a></li>
+					@else 
+						</ul>
+						<?php $cur_cat = $cat->category_name;?>
+
+						<ul class="category">
+							<li>{{$cat->category_name}} <div class="options">{{$cat->title}}<a class="edit" href="" value="{{$cat->title}}"><i class="fa fa-pencil"></i></a> | <a class="delete" href=""><i class="fa fa-trash-o"></i></a></div></li>
+					@endif
+				@endforeach
+			{{-- </ul> --}}
 		</div>
 	</div>
 	<div class="last-child">

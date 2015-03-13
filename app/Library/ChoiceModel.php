@@ -15,7 +15,7 @@ class ChoiceModel {
 		where user_id = :user_id 
 		or user_id = :public; 
 		', [':user_id' => \Auth::User()->user_id,
-		  ':public' => 1]);		
+		  	':public' => 1,]);		
 		return $results;
 	}
 
@@ -62,6 +62,13 @@ class ChoiceModel {
 		AND (user_id = :user_id OR user_id = :public);
 		', [':category_id'=>$id, ':user_id' => \Auth::User()->user_id,
 		  ':public' => 1]);
+		return $results;
+	}
+
+	public function deleteChoice($id) {
+		$results = DB::delete('
+		DELETE FROM choice where choice_id = $id
+		');
 		return $results;
 	}
 

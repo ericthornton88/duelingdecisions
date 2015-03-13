@@ -89,6 +89,12 @@ main > .middle-child {
 	border: 2px solid white;
 }
 
+.panel-body a {
+	color: white;
+	text-shadow: none;
+	text-decoration: none;
+}
+
 main > .last-child, .last_child {
 	float: right;
 	background-color: rgba(176, 226, 251, 0.2);
@@ -227,7 +233,17 @@ Category/all.blade.php CSS
 }
 
 .category {
-	float:left;
+	text-align: left;
+}
+
+.first-child .edit {
+	margin: 0 7px;
+	color: black;
+}
+
+.first-child .delete {
+	margin: 0 7px;
+	color: black;
 }
 
 /*
@@ -372,3 +388,6 @@ main > .select-choice {
 }
 
 
+li {
+	width: 170px;
+}

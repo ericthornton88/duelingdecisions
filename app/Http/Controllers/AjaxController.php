@@ -32,7 +32,7 @@ class AjaxController extends Controller {
 		$choice = new ChoiceModel();
 		$results = $choice->duel($resultsArray);
 		$json_results = json_encode($results);
-		echo $json_results;
+		// echo $json_results;
 
 		return view("/doneDuel", ['results'=>$json_results]);
 	}

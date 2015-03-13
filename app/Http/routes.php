@@ -18,6 +18,8 @@ Route::get('registration', 'RegistrationController@index');
 Route::get('registration/adduser', 'RegistrationController@addUser');
 Route::get('profile', 'CategoryController@getAllCategories');
 Route::get('info', function(){return view('info');});
+Route::get('/edit', function(){return view('updateUser');});
+Route::post('/edit', 'UserController@updateUser');
 
 /*** 
 Category Routes
@@ -32,6 +34,7 @@ Choice Routes
 
 Route::get('/choice/new', "CategoryController@getCategoryList");
 Route::post('/choice/new', 'ChoiceController@addChoice');
+Route::get('/choice/{choice_id}/delete', 'ChoiceController@deleteChoice');
 
 
 
@@ -53,6 +56,8 @@ Route::get('logout', function(){return view("logout");});
 Ajax Routes
 ***/
 Route::get('/choice/{id}', 'AjaxController@getChoice');
+
+
 
 
 

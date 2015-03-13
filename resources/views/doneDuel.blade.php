@@ -13,6 +13,7 @@ Your decision has survived the ring!
 	<div class="middle-child">
 		
 	</div>
+	
 
 	<script id="template-choice" type="text/x-handlebars-template">
 		<h3> @{{title}} </h3>
@@ -22,7 +23,7 @@ Your decision has survived the ring!
 		</ul>
 		<ul>Cons
 			<li>@{{con}}</li>
-			
 		</ul>
+		<a href="/">Return to profile</a>
 	</script>
 @endsection

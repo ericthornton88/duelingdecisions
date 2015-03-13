@@ -9,10 +9,15 @@ $(function(){
 	}
 
 
-	$('ul').on('click', 'li', function(){
-		$(this).parents('ul').toggleClass('expand');
+
+	$('ul').on('mouseover', 'li', function(){
+		$(this).parents('ul').addClass('expand');
 	});
 
+	$('ul').on('mouseleave', 'li', function(){
+		$(this).parents('ul').removeClass('expand');
+	});
+	
 	$('header').on('click', '.btn-primary', function() {
 		console.log('here');
 	  	$(this).parents('.btn-group').find('.dropdown-menu').toggleClass('expand-dropdown');
@@ -37,7 +42,7 @@ $(function(){
 					var fieldset = $('fieldset');
 					fieldset.html('');
 					response.forEach(function(choice){
-						fieldset.append('<label for="' + choice.choice_id + '">' + choice.title + '</label><input type="checkbox" name="' + choice.choice_id + '" value="' + choice.choice_id + '">');
+						fieldset.append('<label for="' + choice.choice_id + '">' + choice.title + '</label><input type="checkbox" name="' + choice.choice_id + '" value="' + choice.choice_id + '" checked>');
 					});
 
 
