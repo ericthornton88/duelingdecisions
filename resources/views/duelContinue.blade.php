@@ -7,7 +7,8 @@
 @section('main_content')
 	<script>
 	var c = <?php echo $results ?>;
-	
+
+
 	</script>
 	<script src="../JavaScript/duel.js"></script>
 
@@ -35,8 +36,7 @@
 </script>
 
 <script id="template-decision" type="text/x-handlebars-template">
-	<form action="" method="POST">
-		<input type="hidden" name="_token" value="{{ csrf_token() }}">
+
 		<div class="container">
 		    <div class="switch">
 		      <input type="radio" class="switch-input" name="choice" value="@{{id_1}}" id="week" checked>
@@ -47,7 +47,7 @@
 		    </div>
 		</div>
 		<button>Submit</button>
-	</form>
+
 </script>
 
 

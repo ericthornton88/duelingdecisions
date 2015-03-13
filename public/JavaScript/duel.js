@@ -1,7 +1,7 @@
 var renderChoice = function(duel) {
 	var source = $('#template-choice').html();
 	var template = Handlebars.compile(source);
-
+	console.log(duel)
 	var output = template({
 		title: duel.title,
 		details: duel.details,
@@ -28,10 +28,14 @@ var renderSubmit = function(duel1, duel2) {
 
 }
 
-
 var get2Choices = function(c) {
-	return {choice1: c[0],
-			choice2: c[1]};
+	array = c;
+	if (array.length >= 2) {
+		first = array.shift();
+		second = array.shift();
+		return {choice1: first,
+				choice2: second};
+	}
 }
 
 
@@ -53,26 +57,42 @@ var getFinal = function(choice) {
 	return {choice1: choice[0]};
 }
 
+var duelSetup = function (){
+	$(".first-child").empty();
+	$(".last-child").empty();
+	$(".middle-child").empty();
 
-
-
-$(function(){
-
-
-if (window.location.pathname == '/duel') {
+	// Initiates the duel.
 	duel = get2Choices(c);
 	renderLeft(duel.choice1);
 	renderRight(duel.choice2);
-
 	renderSubmit(duel.choice1 , duel.choice2);
-} else if (window.location.pathname == '/duel/complete') {
 
-	duelFinal = getFinal(choice);
-	renderFinal(duelFinal.choice1);
-
-}
+};
 
 
+$(function(){
+	$(".select-choice").on("submit", "form", function(e){
+		e.preventDefault();
+		roundWinner = "";
 
+   		if (document.getElementById("week").checked) {
+			roundWinner = first;
+		} else {
+			roundWinner = second;
+		}
+
+		if(array.length == 0 && typeof roundWinner == "object") {
+			console.log("this will be a redirect to winner page.");
+			window.location.replace("/duel/complete");
+		} else { 	// If more than 0 in the array, 
+			array.push(roundWinner);
+			duelSetup();
+		}
+	});
+
+	if (window.location.pathname == '/duel') {
+		duelSetup();
+	}
 
 });

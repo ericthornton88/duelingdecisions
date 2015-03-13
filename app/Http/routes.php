@@ -39,7 +39,7 @@ Route::post('/choice/new', 'ChoiceController@addChoice');
 Duel Routes
 ***/
 Route::post('duel/complete', "AjaxController@endDuel");
-Route::get('duel/complete', function(){return view("doneDuel");});
+// Route::get('duel/complete', function(){return view("doneDuel");});
 Route::post('/duel', "AjaxController@initDuel");
 
 
